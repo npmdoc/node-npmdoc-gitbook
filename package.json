@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"gitbook",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "gitbook",
+    "description": "api documentation for [gitbook (v3.2.2)](https://www.gitbook.com) [![npm package](https://img.shields.io/npm/v/npmdoc-gitbook.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gitbook) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gitbook.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gitbook)",
     "devDependencies": {
-        "gitbook": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "gitbook": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-gitbook",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-gitbook",
+    "keywords": [
+        "documentation",
+        "gitbook"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_gitbook.js",
+    "name": "npmdoc-gitbook",
+    "nameAlias": "npmdoc_gitbook",
+    "nameOriginal": "npmdoc-gitbook",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-gitbook.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
