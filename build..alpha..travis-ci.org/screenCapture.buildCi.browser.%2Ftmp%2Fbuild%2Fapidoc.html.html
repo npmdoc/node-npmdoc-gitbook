@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://www.gitbook.com"
-
-    >gitbook (v3.2.2)</a>
+    <a href="https://www.gitbook.com">gitbook (v3.2.2)</a>
 </h1>
 <h4>Library and cmd utility to generate GitBooks</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gitbook">module gitbook</a><ol>
 
@@ -5297,7 +5290,7 @@
     var config = parent.getConfig();
 
     // Set language in configuration
-    config = config.setValue(&#x27;language&#x27;, language);
+    config = config.setValue('language', language);
 
     return new Book({
         // Inherits config. logegr and list of ignored files
@@ -5325,7 +5318,7 @@
     var books = this.getBooks();
     books = books.set(language, book);
 
-    return this.set(&#x27;books&#x27;, books);
+    return this.set('books', books);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5340,7 +5333,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getBooks = function () {
-    return this.get(&#x27;books&#x27;);
+    return this.get('books');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5355,7 +5348,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getConfig = function () {
-    return this.get(&#x27;config&#x27;);
+    return this.get('config');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5372,7 +5365,7 @@
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getContentFS = function () {
     var fs = this.getFS();
     var config = this.getConfig();
-    var rootFolder = config.getValue(&#x27;root&#x27;);
+    var rootFolder = config.getValue('root');
 
     if (rootFolder) {
         return FS.reduceScope(fs, rootFolder);
@@ -5426,7 +5419,7 @@
         }
     });
     // Adds the general default extension
-    exts.push(&#x27;.md&#x27;);
+    exts.push('.md');
 
     // Choose the first non null
     return exts.find(function (e) { return e !== null; });
@@ -5444,7 +5437,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getDefaultGlossaryPath = function (absolute) {
-    var defaultPath = &#x27;GLOSSARY&#x27;+this.getDefaultExt();
+    var defaultPath = 'GLOSSARY'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -5464,7 +5457,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getDefaultReadmePath = function (absolute) {
-    var defaultPath = &#x27;README&#x27;+this.getDefaultExt();
+    var defaultPath = 'README'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -5484,7 +5477,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getDefaultSummaryPath = function (absolute) {
-    var defaultPath = &#x27;SUMMARY&#x27;+this.getDefaultExt();
+    var defaultPath = 'SUMMARY'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -5504,7 +5497,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getFS = function () {
-    return this.get(&#x27;fs&#x27;);
+    return this.get('fs');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5519,7 +5512,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getGlossary = function () {
-    return this.get(&#x27;glossary&#x27;);
+    return this.get('glossary');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5534,7 +5527,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getIgnore = function () {
-    return this.get(&#x27;ignore&#x27;);
+    return this.get('ignore');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5549,7 +5542,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getLanguage = function () {
-    return this.get(&#x27;language&#x27;);
+    return this.get('language');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5580,7 +5573,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getLanguages = function () {
-    return this.get(&#x27;languages&#x27;);
+    return this.get('languages');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5595,7 +5588,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getLogger = function () {
-    return this.get(&#x27;logger&#x27;);
+    return this.get('logger');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5625,7 +5618,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getReadme = function () {
-    return this.get(&#x27;readme&#x27;);
+    return this.get('readme');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5656,7 +5649,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.getSummary = function () {
-    return this.get(&#x27;summary&#x27;);
+    return this.get('summary');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5672,7 +5665,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.isContentFileIgnored = function (filename) {
     var config = this.getConfig();
-    var rootFolder = config.getValue(&#x27;root&#x27;);
+    var rootFolder = config.getValue('root');
 
     if (rootFolder) {
         filename = path.join(rootFolder, filename);
@@ -5731,7 +5724,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.isMultilingual = function () {
-    return (this.getLanguages().getCount() &#x3e; 0);
+    return (this.getLanguages().getCount() &gt; 0);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5746,7 +5739,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.setConfig = function (config) {
-    return this.set(&#x27;config&#x27;, config);
+    return this.set('config', config);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5761,7 +5754,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.setIgnore = function (ignore) {
-    return this.set(&#x27;ignore&#x27;, ignore);
+    return this.set('ignore', ignore);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5792,7 +5785,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.setReadme = function (readme) {
-    return this.set(&#x27;readme&#x27;, readme);
+    return this.set('readme', readme);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5807,7 +5800,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Book.prototype.setSummary = function (summary) {
-    return this.set(&#x27;summary&#x27;, summary);
+    return this.set('summary', summary);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5887,7 +5880,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Config.keyToKeyPath = function (keyPath) {
-    if (is.string(keyPath)) keyPath = keyPath.split(&#x27;.&#x27;);
+    if (is.string(keyPath)) keyPath = keyPath.split('.');
     return keyPath;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -5903,7 +5896,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Config.prototype.getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5918,7 +5911,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Config.prototype.getPluginDependencies = function () {
-    var plugins = this.getValue(&#x27;plugins&#x27;);
+    var plugins = this.getValue('plugins');
 
     if (is.string(plugins)) {
         return PluginDependency.listFromString(plugins);
@@ -5980,7 +5973,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Config.prototype.getValues = function () {
-    return this.get(&#x27;values&#x27;);
+    return this.get('values');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6000,7 +5993,7 @@
 
     currentValues = currentValues.mergeDeep(values);
 
-    return this.set(&#x27;values&#x27;, currentValues);
+    return this.set('values', currentValues);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6015,7 +6008,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Config.prototype.setFile = function (file) {
-    return this.set(&#x27;file&#x27;, file);
+    return this.set('file', file);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6032,7 +6025,7 @@
     <li>description and source-code<pre class="apidocCodePre">Config.prototype.setPluginDependencies = function (deps) {
     var plugins = PluginDependency.listToArray(deps);
 
-    return this.setValue(&#x27;plugins&#x27;, plugins);
+    return this.setValue('plugins', plugins);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6054,7 +6047,7 @@
     var values = this.getValues();
     values = values.setIn(keyPath, value);
 
-    return this.set(&#x27;values&#x27;, values);
+    return this.set('values', values);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6101,7 +6094,7 @@
     <li>description and source-code<pre class="apidocCodePre">Config.prototype.updateValues = function (values) {
     values = Immutable.fromJS(values);
 
-    return this.set(&#x27;values&#x27;, values);
+    return this.set('values', values);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6140,7 +6133,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function editPlugin(config, pluginName, pluginConfig) {
-    return config.setValue(&#x27;pluginsConfig.&#x27;+pluginName, pluginConfig);
+    return config.setValue('pluginsConfig.'+pluginName, pluginConfig);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6155,7 +6148,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function getPluginConfig(config, pluginName) {
-    var pluginsConfig = config.getValues().get(&#x27;pluginsConfig&#x27;);
+    var pluginsConfig = config.getValues().get('pluginsConfig');
     if (pluginsConfig === undefined) {
         return {};
     }
@@ -6180,7 +6173,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function hasPlugin(deps, pluginName, version) {
     return !!deps.find(function(dep) {
-        return dep.getName() === pluginName &#x26;&#x26; (!version || dep.getVersion() === version);
+        return dep.getName() === pluginName &amp;&amp; (!version || dep.getVersion() === version);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -6239,8 +6232,8 @@
     <li>description and source-code<pre class="apidocCodePre">function togglePlugin(config, pluginName, state) {
     var deps = config.getPluginDependencies();
 
-    // For default plugin, we should ensure it&#x27;s listed first
-    if (isDefaultPlugin(pluginName) &#x26;&#x26; !hasPlugin(deps, pluginName)) {
+    // For default plugin, we should ensure it's listed first
+    if (isDefaultPlugin(pluginName) &amp;&amp; !hasPlugin(deps, pluginName)) {
         deps = deps.push(PluginDependency.create(pluginName));
     }
 
@@ -6317,7 +6310,7 @@
     return Promise()
     .then(function() {
         filename = that.resolve(filename);
-        var exists = that.get(&#x27;fsExists&#x27;);
+        var exists = that.get('fsExists');
 
         return exists(filename);
     });
@@ -6355,7 +6348,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">FS.prototype.getRoot = function () {
-    return this.get(&#x27;root&#x27;);
+    return this.get('root');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6389,7 +6382,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">FS.prototype.listAllFiles = function (dirName, filterFn) {
     var that = this;
-    dirName = dirName || &#x27;.&#x27;;
+    dirName = dirName || '.';
 
     return this.readDir(dirName)
     .then(function(files) {
@@ -6397,7 +6390,7 @@
             var isDirectory = pathIsFolder(file);
             var newDirName = path.join(dirName, file);
 
-            if (filterFn &#x26;&#x26; filterFn(newDirName) === false) {
+            if (filterFn &amp;&amp; filterFn(newDirName) === false) {
                 return out;
             }
 
@@ -6444,13 +6437,13 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">FS.prototype.loadAsObject = function (filename) {
     var that = this;
-    var fsLoadObject = this.get(&#x27;fsLoadObject&#x27;);
+    var fsLoadObject = this.get('fsLoadObject');
 
     return this.exists(filename)
     .then(function(exists) {
         if (!exists) {
-            var err = new Error(&#x27;Module doesn\&#x27;t exist&#x27;);
-            err.code = &#x27;MODULE_NOT_FOUND&#x27;;
+            var err = new Error('Module doesn\'t exist');
+            err.code = 'MODULE_NOT_FOUND';
 
             throw err;
         }
@@ -6483,7 +6476,7 @@
     return Promise()
     .then(function() {
         filename = that.resolve(filename);
-        var read = that.get(&#x27;fsReadFile&#x27;);
+        var read = that.get('fsReadFile');
 
         return read(filename);
     });
@@ -6503,7 +6496,7 @@
     <li>description and source-code<pre class="apidocCodePre">FS.prototype.readAsStream = function (filename) {
     var that = this;
     var filepath = that.resolve(filename);
-    var fsReadAsStream = this.get(&#x27;fsReadAsStream&#x27;);
+    var fsReadAsStream = this.get('fsReadAsStream');
 
     if (fsReadAsStream) {
         return Promise(fsReadAsStream(filepath));
@@ -6530,7 +6523,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">FS.prototype.readAsString = function (filename, encoding) {
-    encoding = encoding || &#x27;utf8&#x27;;
+    encoding = encoding || 'utf8';
 
     return this.read(filename)
     .then(function(buf) {
@@ -6555,7 +6548,7 @@
     return Promise()
     .then(function() {
         var dirpath = that.resolve(dirname);
-        var readDir = that.get(&#x27;fsReadDir&#x27;);
+        var readDir = that.get('fsReadDir');
 
         return readDir(dirpath);
     })
@@ -6608,7 +6601,7 @@
     return Promise()
     .then(function() {
         var filepath = that.resolve(filename);
-        var stat = that.get(&#x27;fsStatFile&#x27;);
+        var stat = that.get('fsStatFile');
 
         return stat(filepath);
     })
@@ -6629,7 +6622,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function reduceScope(fs, scope) {
-    return fs.set(&#x27;root&#x27;, path.join(fs.getRoot(), scope));
+    return fs.set('root', path.join(fs.getRoot(), scope));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6739,7 +6732,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">File.prototype.getMTime = function () {
-    return this.get(&#x27;mtime&#x27;);
+    return this.get('mtime');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6769,7 +6762,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">File.prototype.getPath = function () {
-    return this.get(&#x27;path&#x27;);
+    return this.get('path');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6838,7 +6831,7 @@
     var entries = glossary.getEntries();
 
     entries = entries.set(id, entry);
-    return glossary.set(&#x27;entries&#x27;, entries);
+    return glossary.set('entries', entries);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6899,7 +6892,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Glossary.prototype.getEntries = function () {
-    return this.get(&#x27;entries&#x27;);
+    return this.get('entries');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6932,7 +6925,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Glossary.prototype.getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6991,7 +6984,7 @@
         var logger = output.getLogger();
         var rootFolder = output.getRoot();
 
-        logger.debug.ln(&#x27;cleanup folder &#x22;&#x27; + rootFolder + &#x27;&#x22;&#x27;);
+        logger.debug.ln('cleanup folder "' + rootFolder + '"');
         return fs.ensureFolder(rootFolder)
             .thenResolve(output);
     })
@@ -7004,7 +6997,7 @@
         var end = Date.now();
         var duration = (end - start)/1000;
 
-        logger.info.ok(&#x27;generation finished with success in &#x27; + duration.toFixed(1) + &#x27;s !&#x27;);
+        logger.info.ok('generation finished with success in ' + duration.toFixed(1) + 's !');
 
         return output;
     });
@@ -7086,7 +7079,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Page.prototype.getAttributes = function () {
-    return this.get(&#x27;attributes&#x27;);
+    return this.get('attributes');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7101,7 +7094,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Page.prototype.getContent = function () {
-    return this.get(&#x27;content&#x27;);
+    return this.get('content');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7116,7 +7109,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Page.prototype.getDir = function () {
-    return this.get(&#x27;dir&#x27;);
+    return this.get('dir');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7131,7 +7124,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Page.prototype.getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7168,7 +7161,7 @@
         return content;
     }
 
-    var frontMatter = &#x27;---\n&#x27; + yaml.safeDump(attrs.toJS(), { skipInvalid: true }) + &#x27;---\n\n&#x27;;
+    var frontMatter = '---\n' + yaml.safeDump(attrs.toJS(), { skipInvalid: true }) + '---\n\n';
     return (frontMatter + content);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -7210,8 +7203,8 @@
     }
 
     return timing.measure(
-        &#x27;parse.listAssets&#x27;,
-        fs.listAllFiles(&#x27;.&#x27;, filterFile)
+        'parse.listAssets',
+        fs.listAllFiles('.', filterFile)
     );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -7229,7 +7222,7 @@
     <li>description and source-code<pre class="apidocCodePre">function lookupStructureFile(book, type) {
     var config = book.getConfig();
 
-    var fileToSearch = config.getValue([&#x27;structure&#x27;, type]);
+    var fileToSearch = config.getValue(['structure', type]);
 
     return findParsableFile(book, fileToSearch);
 }</pre></li>
@@ -7247,7 +7240,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseBook(book) {
     return timing.measure(
-        &#x27;parse.book&#x27;,
+        'parse.book',
         Promise(book)
         .then(parseIgnore)
         .then(parseConfig)
@@ -7295,7 +7288,7 @@
             });
         })
         .fail(function(err) {
-            if (err.code != &#x27;MODULE_NOT_FOUND&#x27;) throw(err);
+            if (err.code != 'MODULE_NOT_FOUND') throw(err);
             else return Promise(false);
         });
     })
@@ -7330,16 +7323,16 @@
     <li>description and source-code<pre class="apidocCodePre">function parseGlossary(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;glossary&#x27;)
+    return parseStructureFile(book, 'glossary')
     .spread(function(file, entries) {
         if (!file) {
             return book;
         }
 
-        logger.debug.ln(&#x27;glossary index file found at&#x27;, file.getPath());
+        logger.debug.ln('glossary index file found at', file.getPath());
 
         var glossary = Glossary.createFromEntries(file, entries);
-        return book.set(&#x27;glossary&#x27;, glossary);
+        return book.set('glossary', glossary);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -7356,7 +7349,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseIgnore(book) {
     if (book.isLanguageBook()) {
-        return Promise.reject(new Error(&#x27;Ignore files could be parsed for language books&#x27;));
+        return Promise.reject(new Error('Ignore files could be parsed for language books'));
     }
 
     var fs = book.getFS();
@@ -7392,7 +7385,7 @@
     <li>description and source-code<pre class="apidocCodePre">function parseLanguages(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;langs&#x27;)
+    return parseStructureFile(book, 'langs')
     .spread(function(file, result) {
         if (!file) {
             return book;
@@ -7400,10 +7393,10 @@
 
         var languages = Languages.createFromList(file, result);
 
-        logger.debug.ln(&#x27;languages index file found at&#x27;, file.getPath());
-        logger.info.ln(&#x27;parsing multilingual book, with&#x27;, languages.getList().size, &#x27;languages&#x27;);
+        logger.debug.ln('languages index file found at', file.getPath());
+        logger.info.ln('parsing multilingual book, with', languages.getList().size, 'languages');
 
-        return book.set(&#x27;languages&#x27;, languages);
+        return book.set('languages', languages);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -7468,7 +7461,7 @@
 
     // Parse pages from summary
     return timing.measure(
-        &#x27;parse.listPages&#x27;,
+        'parse.listPages',
         walkSummary(summary, function(article) {
             if (!article.isPage()) return;
 
@@ -7479,7 +7472,7 @@
 
             return parseFilePage(book, filepath)
             .then(function(page) {
-                // file doesn&#x27;t exist
+                // file doesn't exist
                 if (!page) {
                     return;
                 }
@@ -7499,7 +7492,7 @@
 
         return parseFilePage(book, file.getPath())
         .then(function(page) {
-            // file doesn&#x27;t exist
+            // file doesn't exist
             if (!page) {
                 return;
             }
@@ -7527,16 +7520,16 @@
     <li>description and source-code<pre class="apidocCodePre">function parseReadme(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;readme&#x27;)
+    return parseStructureFile(book, 'readme')
     .spread(function(file, result) {
         if (!file) {
-            throw new error.FileNotFoundError({ filename: &#x27;README&#x27; });
+            throw new error.FileNotFoundError({ filename: 'README' });
         }
 
-        logger.debug.ln(&#x27;readme found at&#x27;, file.getPath());
+        logger.debug.ln('readme found at', file.getPath());
 
         var readme = Readme.create(file, result);
-        return book.set(&#x27;readme&#x27;, readme);
+        return book.set('readme', readme);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -7556,24 +7549,24 @@
     var logger = book.getLogger();
     var readmeFile = readme.getFile();
 
-    return parseStructureFile(book, &#x27;summary&#x27;)
+    return parseStructureFile(book, 'summary')
     .spread(function(file, result) {
         var summary;
 
         if (!file) {
-            logger.warn.ln(&#x27;no summary file in this book&#x27;);
+            logger.warn.ln('no summary file in this book');
             summary = Summary();
         } else {
-            logger.debug.ln(&#x27;summary file found at&#x27;, file.getPath());
+            logger.debug.ln('summary file found at', file.getPath());
             summary = Summary.createFromParts(file, result.parts);
         }
 
         // Insert readme as first entry if not in SUMMARY.md
         var readmeArticle = summary.getByPath(readmeFile.getPath());
 
-        if (readmeFile.exists() &#x26;&#x26; !readmeArticle) {
+        if (readmeFile.exists() &amp;&amp; !readmeArticle) {
             summary = SummaryModifier.unshiftArticle(summary, {
-                title: &#x27;Introduction&#x27;,
+                title: 'Introduction',
                 ref: readmeFile.getPath()
             });
         }
@@ -7648,12 +7641,12 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">PluginDependency.createFromString = function (s) {
-    var parts = s.split(&#x27;@&#x27;);
+    var parts = s.split('@');
     var name = parts[0];
-    var version = parts.slice(1).join(&#x27;@&#x27;);
+    var version = parts.slice(1).join('@');
     var enabled = true;
 
-    if (name[0] === &#x27;-&#x27;) {
+    if (name[0] === '-') {
         enabled = false;
         name = name.slice(1);
     }
@@ -7683,8 +7676,8 @@
                 return PluginDependency.createFromString(entry);
             } else {
                 return PluginDependency({
-                    name: entry.get(&#x27;name&#x27;),
-                    version: entry.get(&#x27;version&#x27;)
+                    name: entry.get('name'),
+                    version: entry.get('version')
                 });
             }
         })
@@ -7705,7 +7698,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">PluginDependency.listFromString = function (s) {
-    var parts = s.split(&#x27;,&#x27;);
+    var parts = s.split(',');
     return PluginDependency.listFromArray(parts);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -7723,15 +7716,15 @@
     <li>description and source-code<pre class="apidocCodePre">PluginDependency.listToArray = function (list) {
     return list
         .map(function(dep) {
-            var result = &#x27;&#x27;;
+            var result = '';
 
             if (!dep.isEnabled()) {
-                result += &#x27;-&#x27;;
+                result += '-';
             }
 
             result += dep.getName();
             if (dep.getVersion() !== DEFAULT_VERSION) {
-                result += &#x27;@&#x27; + dep.getVersion();
+                result += '@' + dep.getVersion();
             }
 
             return result;
@@ -7766,7 +7759,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">PluginDependency.prototype.getName = function () {
-    return this.get(&#x27;name&#x27;);
+    return this.get('name');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7796,7 +7789,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">PluginDependency.prototype.getVersion = function () {
-    return this.get(&#x27;version&#x27;);
+    return this.get('version');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7811,7 +7804,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">PluginDependency.prototype.isEnabled = function () {
-    return this.get(&#x27;enabled&#x27;);
+    return this.get('enabled');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7845,7 +7838,7 @@
         state = !this.isEnabled();
     }
 
-    return this.set(&#x27;enabled&#x27;, state);
+    return this.set('enabled', state);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7921,7 +7914,7 @@
     return parts.reduce(function(result, part) {
         if (result) return result;
 
-        if (partIter &#x26;&#x26; partIter(part)) return part;
+        if (partIter &amp;&amp; partIter(part)) return part;
         return SummaryArticle.findArticle(part, iter);
     }, null);
 }</pre></li>
@@ -7982,7 +7975,7 @@
         var articlePath = article.getPath();
 
         return (
-            articlePath &#x26;&#x26;
+            articlePath &amp;&amp;
             LocationUtils.areIdenticalPaths(articlePath, filePath)
         );
     });
@@ -8000,7 +7993,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Summary.prototype.getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8097,7 +8090,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Summary.prototype.getParts = function () {
-    return this.get(&#x27;parts&#x27;);
+    return this.get('parts');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8208,10 +8201,10 @@
         return summary;
     }
 
-    part = part.set(&#x27;title&#x27;, newTitle);
+    part = part.set('title', newTitle);
     parts = parts.set(index, part);
 
-    return summary.set(&#x27;parts&#x27;, parts);
+    return summary.set('parts', parts);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8242,7 +8235,7 @@
     articles = articles.insert(index, article);
 
     // Reindex the level from here
-    parent = parent.set(&#x27;articles&#x27;, articles);
+    parent = parent.set('articles', articles);
     parent = indexArticleLevels(parent);
 
     return mergeAtLevel(summary, parent.getLevel(), parent);
@@ -8263,7 +8256,7 @@
     part = SummaryPart(part);
 
     var parts = summary.getParts().insert(index, part);
-    return indexLevels(summary.set(&#x27;parts&#x27;, parts));
+    return indexLevels(summary.set('parts', parts));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8307,7 +8300,7 @@
 
     var targetLevel = increment(afterTargetLevel);
 
-    if (targetLevel &#x3c; origin) {
+    if (targetLevel &lt; origin) {
         // Remove first
         var removed = removeArticle(summary, originLevel);
         // Insert then
@@ -8348,7 +8341,7 @@
 
     // Remove from children
     articles = articles.remove(index);
-    parent = parent.set(&#x27;articles&#x27;, articles);
+    parent = parent.set('articles', articles);
 
     // Reindex the level from here
     parent = indexArticleLevels(parent);
@@ -8369,7 +8362,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function removePart(summary, index) {
     var parts = summary.getParts().remove(index);
-    return indexLevels(summary.set(&#x27;parts&#x27;, parts));
+    return indexLevels(summary.set('parts', parts));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8391,10 +8384,10 @@
 
     var articles = part.getArticles();
     articles = articles.unshift(article);
-    part = part.set(&#x27;articles&#x27;, articles);
+    part = part.set('articles', articles);
 
     parts = parts.set(0, part);
-    summary = summary.set(&#x27;parts&#x27;, parts);
+    summary = summary.set('parts', parts);
 
     return indexLevels(summary);
 }</pre></li>
@@ -8435,7 +8428,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function initBook(rootFolder) {
-    var extension = &#x27;.md&#x27;;
+    var extension = '.md';
 
     return fs.mkdirp(rootFolder)
 
@@ -8446,9 +8439,9 @@
 
         return Parse.parseReadme(book)
 
-        // Setup default readme if doesn&#x27;t found one
+        // Setup default readme if doesn't found one
         .fail(function() {
-            var readmeFile = File.createWithFilepath(&#x27;README&#x27; + extension);
+            var readmeFile = File.createWithFilepath('README' + extension);
             var readme = Readme.create(readmeFile);
             return book.setReadme(readme);
         });
@@ -8459,7 +8452,7 @@
         var logger = book.getLogger();
         var summary = book.getSummary();
         var summaryFile = summary.getFile();
-        var summaryFilename = summaryFile.getPath() || (&#x27;SUMMARY&#x27; + extension);
+        var summaryFilename = summaryFile.getPath() || ('SUMMARY' + extension);
 
         var articles = summary.getArticlesAsList();
 
@@ -8474,8 +8467,8 @@
             return fs.assertFile(filePath, function() {
                 return fs.ensureFile(filePath)
                 .then(function() {
-                    logger.info.ln(&#x27;create&#x27;, article.getPath());
-                    return fs.writeFile(filePath, &#x27;# &#x27; + article.getTitle() + &#x27;\n\n&#x27;);
+                    logger.info.ln('create', article.getPath());
+                    return fs.writeFile(filePath, '# ' + article.getTitle() + '\n\n');
                 });
             });
         })
@@ -8486,14 +8479,14 @@
 
             return fs.ensureFile(filePath)
             .then(function() {
-                logger.info.ln(&#x27;create &#x27; + path.basename(filePath));
+                logger.info.ln('create ' + path.basename(filePath));
                 return fs.writeFile(filePath, summary.toText(extension));
             });
         })
 
         // Log end
         .then(function() {
-            logger.info.ln(&#x27;initialization is finished&#x27;);
+            logger.info.ln('initialization is finished');
         });
     });
 }</pre></li>
@@ -8610,7 +8603,7 @@
     var config = parent.getConfig();
 
     // Set language in configuration
-    config = config.setValue(&#x27;language&#x27;, language);
+    config = config.setValue('language', language);
 
     return new Book({
         // Inherits config. logegr and list of ignored files
@@ -8666,7 +8659,7 @@
     var config = parent.getConfig();
 
     // Set language in configuration
-    config = config.setValue(&#x27;language&#x27;, language);
+    config = config.setValue('language', language);
 
     return new Book({
         // Inherits config. logegr and list of ignored files
@@ -8699,7 +8692,7 @@
     var books = this.getBooks();
     books = books.set(language, book);
 
-    return this.set(&#x27;books&#x27;, books);
+    return this.set('books', books);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8744,7 +8737,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getBooks = function () {
-    return this.get(&#x27;books&#x27;);
+    return this.get('books');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8759,7 +8752,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getConfig = function () {
-    return this.get(&#x27;config&#x27;);
+    return this.get('config');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8776,7 +8769,7 @@
     <li>description and source-code<pre class="apidocCodePre">getContentFS = function () {
     var fs = this.getFS();
     var config = this.getConfig();
-    var rootFolder = config.getValue(&#x27;root&#x27;);
+    var rootFolder = config.getValue('root');
 
     if (rootFolder) {
         return FS.reduceScope(fs, rootFolder);
@@ -8830,7 +8823,7 @@
         }
     });
     // Adds the general default extension
-    exts.push(&#x27;.md&#x27;);
+    exts.push('.md');
 
     // Choose the first non null
     return exts.find(function (e) { return e !== null; });
@@ -8848,7 +8841,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDefaultGlossaryPath = function (absolute) {
-    var defaultPath = &#x27;GLOSSARY&#x27;+this.getDefaultExt();
+    var defaultPath = 'GLOSSARY'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -8868,7 +8861,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDefaultReadmePath = function (absolute) {
-    var defaultPath = &#x27;README&#x27;+this.getDefaultExt();
+    var defaultPath = 'README'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -8888,7 +8881,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDefaultSummaryPath = function (absolute) {
-    var defaultPath = &#x27;SUMMARY&#x27;+this.getDefaultExt();
+    var defaultPath = 'SUMMARY'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -8908,7 +8901,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFS = function () {
-    return this.get(&#x27;fs&#x27;);
+    return this.get('fs');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8923,7 +8916,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getGlossary = function () {
-    return this.get(&#x27;glossary&#x27;);
+    return this.get('glossary');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8938,7 +8931,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getIgnore = function () {
-    return this.get(&#x27;ignore&#x27;);
+    return this.get('ignore');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8953,7 +8946,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLanguage = function () {
-    return this.get(&#x27;language&#x27;);
+    return this.get('language');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8984,7 +8977,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLanguages = function () {
-    return this.get(&#x27;languages&#x27;);
+    return this.get('languages');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8999,7 +8992,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLogger = function () {
-    return this.get(&#x27;logger&#x27;);
+    return this.get('logger');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9029,7 +9022,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getReadme = function () {
-    return this.get(&#x27;readme&#x27;);
+    return this.get('readme');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9060,7 +9053,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getSummary = function () {
-    return this.get(&#x27;summary&#x27;);
+    return this.get('summary');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9076,7 +9069,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isContentFileIgnored = function (filename) {
     var config = this.getConfig();
-    var rootFolder = config.getValue(&#x27;root&#x27;);
+    var rootFolder = config.getValue('root');
 
     if (rootFolder) {
         filename = path.join(rootFolder, filename);
@@ -9135,7 +9128,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isMultilingual = function () {
-    return (this.getLanguages().getCount() &#x3e; 0);
+    return (this.getLanguages().getCount() &gt; 0);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9150,7 +9143,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setConfig = function (config) {
-    return this.set(&#x27;config&#x27;, config);
+    return this.set('config', config);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9165,7 +9158,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setIgnore = function (ignore) {
-    return this.set(&#x27;ignore&#x27;, ignore);
+    return this.set('ignore', ignore);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9196,7 +9189,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setReadme = function (readme) {
-    return this.set(&#x27;readme&#x27;, readme);
+    return this.set('readme', readme);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9211,7 +9204,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setSummary = function (summary) {
-    return this.set(&#x27;summary&#x27;, summary);
+    return this.set('summary', summary);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9240,7 +9233,7 @@
     var books = this.getBooks();
     books = books.set(language, book);
 
-    return this.set(&#x27;books&#x27;, books);
+    return this.set('books', books);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9260,7 +9253,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getBooks = function () {
-    return this.get(&#x27;books&#x27;);
+    return this.get('books');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9280,7 +9273,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getConfig = function () {
-    return this.get(&#x27;config&#x27;);
+    return this.get('config');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9302,7 +9295,7 @@
     <li>description and source-code<pre class="apidocCodePre">getContentFS = function () {
     var fs = this.getFS();
     var config = this.getConfig();
-    var rootFolder = config.getValue(&#x27;root&#x27;);
+    var rootFolder = config.getValue('root');
 
     if (rootFolder) {
         return FS.reduceScope(fs, rootFolder);
@@ -9366,7 +9359,7 @@
         }
     });
     // Adds the general default extension
-    exts.push(&#x27;.md&#x27;);
+    exts.push('.md');
 
     // Choose the first non null
     return exts.find(function (e) { return e !== null; });
@@ -9389,7 +9382,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDefaultGlossaryPath = function (absolute) {
-    var defaultPath = &#x27;GLOSSARY&#x27;+this.getDefaultExt();
+    var defaultPath = 'GLOSSARY'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -9414,7 +9407,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDefaultReadmePath = function (absolute) {
-    var defaultPath = &#x27;README&#x27;+this.getDefaultExt();
+    var defaultPath = 'README'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -9439,7 +9432,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDefaultSummaryPath = function (absolute) {
-    var defaultPath = &#x27;SUMMARY&#x27;+this.getDefaultExt();
+    var defaultPath = 'SUMMARY'+this.getDefaultExt();
     if (absolute) {
         return path.join(this.getContentRoot(), defaultPath);
     } else {
@@ -9464,7 +9457,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFS = function () {
-    return this.get(&#x27;fs&#x27;);
+    return this.get('fs');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9484,7 +9477,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getGlossary = function () {
-    return this.get(&#x27;glossary&#x27;);
+    return this.get('glossary');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9504,7 +9497,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getIgnore = function () {
-    return this.get(&#x27;ignore&#x27;);
+    return this.get('ignore');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9524,7 +9517,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLanguage = function () {
-    return this.get(&#x27;language&#x27;);
+    return this.get('language');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9565,7 +9558,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLanguages = function () {
-    return this.get(&#x27;languages&#x27;);
+    return this.get('languages');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9585,7 +9578,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLogger = function () {
-    return this.get(&#x27;logger&#x27;);
+    return this.get('logger');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9625,7 +9618,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getReadme = function () {
-    return this.get(&#x27;readme&#x27;);
+    return this.get('readme');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9666,7 +9659,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getSummary = function () {
-    return this.get(&#x27;summary&#x27;);
+    return this.get('summary');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9687,7 +9680,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isContentFileIgnored = function (filename) {
     var config = this.getConfig();
-    var rootFolder = config.getValue(&#x27;root&#x27;);
+    var rootFolder = config.getValue('root');
 
     if (rootFolder) {
         filename = path.join(rootFolder, filename);
@@ -9761,7 +9754,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isMultilingual = function () {
-    return (this.getLanguages().getCount() &#x3e; 0);
+    return (this.getLanguages().getCount() &gt; 0);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9781,7 +9774,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setConfig = function (config) {
-    return this.set(&#x27;config&#x27;, config);
+    return this.set('config', config);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9801,7 +9794,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setIgnore = function (ignore) {
-    return this.set(&#x27;ignore&#x27;, ignore);
+    return this.set('ignore', ignore);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9842,7 +9835,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setReadme = function (readme) {
-    return this.set(&#x27;readme&#x27;, readme);
+    return this.set('readme', readme);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9862,7 +9855,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setSummary = function (summary) {
-    return this.set(&#x27;summary&#x27;, summary);
+    return this.set('summary', summary);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9919,14 +9912,14 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var EXTENSIONS_MARKDOWN = require(&#x27;./constants/extsMarkdown&#x27;);
-var EXTENSIONS_ASCIIDOC = require(&#x27;./constants/extsAsciidoc&#x27;);
-var Parser = require(&#x27;./models/parser&#x27;);
+var EXTENSIONS_MARKDOWN = require('./constants/extsMarkdown');
+var EXTENSIONS_ASCIIDOC = require('./constants/extsAsciidoc');
+var Parser = require('./models/parser');
 
 // This list is ordered by priority of parsers to use
 var parsers = Immutable.List([
-   Parser.<span class="apidocCodeKeywordSpan">create</span>(&#x27;markdown&#x27;, EXTENSIONS_MARKDOWN, markdownParser),
-   Parser.create(&#x27;asciidoc&#x27;, EXTENSIONS_ASCIIDOC, asciidocParser)
+   Parser.<span class="apidocCodeKeywordSpan">create</span>('markdown', EXTENSIONS_MARKDOWN, markdownParser),
+   Parser.create('asciidoc', EXTENSIONS_ASCIIDOC, asciidocParser)
 ]);
 
 /**
@@ -9963,7 +9956,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">keyToKeyPath = function (keyPath) {
-    if (is.string(keyPath)) keyPath = keyPath.split(&#x27;.&#x27;);
+    if (is.string(keyPath)) keyPath = keyPath.split('.');
     return keyPath;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -9991,14 +9984,14 @@ var parsers = Immutable.List([
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var EXTENSIONS_MARKDOWN = require(&#x27;./constants/extsMarkdown&#x27;);
-var EXTENSIONS_ASCIIDOC = require(&#x27;./constants/extsAsciidoc&#x27;);
-var Parser = require(&#x27;./models/parser&#x27;);
+var EXTENSIONS_MARKDOWN = require('./constants/extsMarkdown');
+var EXTENSIONS_ASCIIDOC = require('./constants/extsAsciidoc');
+var Parser = require('./models/parser');
 
 // This list is ordered by priority of parsers to use
 var parsers = Immutable.List([
-   Parser.<span class="apidocCodeKeywordSpan">create</span>(&#x27;markdown&#x27;, EXTENSIONS_MARKDOWN, markdownParser),
-   Parser.create(&#x27;asciidoc&#x27;, EXTENSIONS_ASCIIDOC, asciidocParser)
+   Parser.<span class="apidocCodeKeywordSpan">create</span>('markdown', EXTENSIONS_MARKDOWN, markdownParser),
+   Parser.create('asciidoc', EXTENSIONS_ASCIIDOC, asciidocParser)
 ]);
 
 /**
@@ -10045,7 +10038,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">keyToKeyPath = function (keyPath) {
-    if (is.string(keyPath)) keyPath = keyPath.split(&#x27;.&#x27;);
+    if (is.string(keyPath)) keyPath = keyPath.split('.');
     return keyPath;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -10096,7 +10089,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10111,7 +10104,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getPluginDependencies = function () {
-    var plugins = this.getValue(&#x27;plugins&#x27;);
+    var plugins = this.getValue('plugins');
 
     if (is.string(plugins)) {
         return PluginDependency.listFromString(plugins);
@@ -10173,7 +10166,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getValues = function () {
-    return this.get(&#x27;values&#x27;);
+    return this.get('values');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10193,7 +10186,7 @@ var parsers = Immutable.List([
 
     currentValues = currentValues.mergeDeep(values);
 
-    return this.set(&#x27;values&#x27;, currentValues);
+    return this.set('values', currentValues);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10208,7 +10201,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setFile = function (file) {
-    return this.set(&#x27;file&#x27;, file);
+    return this.set('file', file);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10225,7 +10218,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">setPluginDependencies = function (deps) {
     var plugins = PluginDependency.listToArray(deps);
 
-    return this.setValue(&#x27;plugins&#x27;, plugins);
+    return this.setValue('plugins', plugins);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10247,7 +10240,7 @@ var parsers = Immutable.List([
     var values = this.getValues();
     values = values.setIn(keyPath, value);
 
-    return this.set(&#x27;values&#x27;, values);
+    return this.set('values', values);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10294,7 +10287,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">updateValues = function (values) {
     values = Immutable.fromJS(values);
 
-    return this.set(&#x27;values&#x27;, values);
+    return this.set('values', values);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10322,7 +10315,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10342,7 +10335,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getPluginDependencies = function () {
-    var plugins = this.getValue(&#x27;plugins&#x27;);
+    var plugins = this.getValue('plugins');
 
     if (is.string(plugins)) {
         return PluginDependency.listFromString(plugins);
@@ -10419,7 +10412,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getValues = function () {
-    return this.get(&#x27;values&#x27;);
+    return this.get('values');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10444,7 +10437,7 @@ var parsers = Immutable.List([
 
     currentValues = currentValues.mergeDeep(values);
 
-    return this.set(&#x27;values&#x27;, currentValues);
+    return this.set('values', currentValues);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10464,7 +10457,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setFile = function (file) {
-    return this.set(&#x27;file&#x27;, file);
+    return this.set('file', file);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10486,7 +10479,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">setPluginDependencies = function (deps) {
     var plugins = PluginDependency.listToArray(deps);
 
-    return this.setValue(&#x27;plugins&#x27;, plugins);
+    return this.setValue('plugins', plugins);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10513,7 +10506,7 @@ var parsers = Immutable.List([
     var values = this.getValues();
     values = values.setIn(keyPath, value);
 
-    return this.set(&#x27;values&#x27;, values);
+    return this.set('values', values);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10575,7 +10568,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">updateValues = function (values) {
     values = Immutable.fromJS(values);
 
-    return this.set(&#x27;values&#x27;, values);
+    return this.set('values', values);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10619,7 +10612,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function editPlugin(config, pluginName, pluginConfig) {
-    return config.setValue(&#x27;pluginsConfig.&#x27;+pluginName, pluginConfig);
+    return config.setValue('pluginsConfig.'+pluginName, pluginConfig);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10634,7 +10627,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function getPluginConfig(config, pluginName) {
-    var pluginsConfig = config.getValues().get(&#x27;pluginsConfig&#x27;);
+    var pluginsConfig = config.getValues().get('pluginsConfig');
     if (pluginsConfig === undefined) {
         return {};
     }
@@ -10659,7 +10652,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function hasPlugin(deps, pluginName, version) {
     return !!deps.find(function(dep) {
-        return dep.getName() === pluginName &#x26;&#x26; (!version || dep.getVersion() === version);
+        return dep.getName() === pluginName &amp;&amp; (!version || dep.getVersion() === version);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -10718,8 +10711,8 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function togglePlugin(config, pluginName, state) {
     var deps = config.getPluginDependencies();
 
-    // For default plugin, we should ensure it&#x27;s listed first
-    if (isDefaultPlugin(pluginName) &#x26;&#x26; !hasPlugin(deps, pluginName)) {
+    // For default plugin, we should ensure it's listed first
+    if (isDefaultPlugin(pluginName) &amp;&amp; !hasPlugin(deps, pluginName)) {
         deps = deps.push(PluginDependency.create(pluginName));
     }
 
@@ -10780,7 +10773,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function editPlugin(config, pluginName, pluginConfig) {
-    return config.setValue(&#x27;pluginsConfig.&#x27;+pluginName, pluginConfig);
+    return config.setValue('pluginsConfig.'+pluginName, pluginConfig);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10800,7 +10793,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function getPluginConfig(config, pluginName) {
-    var pluginsConfig = config.getValues().get(&#x27;pluginsConfig&#x27;);
+    var pluginsConfig = config.getValues().get('pluginsConfig');
     if (pluginsConfig === undefined) {
         return {};
     }
@@ -10830,7 +10823,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function hasPlugin(deps, pluginName, version) {
     return !!deps.find(function(dep) {
-        return dep.getName() === pluginName &#x26;&#x26; (!version || dep.getVersion() === version);
+        return dep.getName() === pluginName &amp;&amp; (!version || dep.getVersion() === version);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -10904,8 +10897,8 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function togglePlugin(config, pluginName, state) {
     var deps = config.getPluginDependencies();
 
-    // For default plugin, we should ensure it&#x27;s listed first
-    if (isDefaultPlugin(pluginName) &#x26;&#x26; !hasPlugin(deps, pluginName)) {
+    // For default plugin, we should ensure it's listed first
+    if (isDefaultPlugin(pluginName) &amp;&amp; !hasPlugin(deps, pluginName)) {
         deps = deps.push(PluginDependency.create(pluginName));
     }
 
@@ -10971,14 +10964,14 @@ var parsers = Immutable.List([
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var EXTENSIONS_MARKDOWN = require(&#x27;./constants/extsMarkdown&#x27;);
-var EXTENSIONS_ASCIIDOC = require(&#x27;./constants/extsAsciidoc&#x27;);
-var Parser = require(&#x27;./models/parser&#x27;);
+var EXTENSIONS_MARKDOWN = require('./constants/extsMarkdown');
+var EXTENSIONS_ASCIIDOC = require('./constants/extsAsciidoc');
+var Parser = require('./models/parser');
 
 // This list is ordered by priority of parsers to use
 var parsers = Immutable.List([
-   Parser.<span class="apidocCodeKeywordSpan">create</span>(&#x27;markdown&#x27;, EXTENSIONS_MARKDOWN, markdownParser),
-   Parser.create(&#x27;asciidoc&#x27;, EXTENSIONS_ASCIIDOC, asciidocParser)
+   Parser.<span class="apidocCodeKeywordSpan">create</span>('markdown', EXTENSIONS_MARKDOWN, markdownParser),
+   Parser.create('asciidoc', EXTENSIONS_ASCIIDOC, asciidocParser)
 ]);
 
 /**
@@ -10998,7 +10991,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function reduceScope(fs, scope) {
-    return fs.set(&#x27;root&#x27;, path.join(fs.getRoot(), scope));
+    return fs.set('root', path.join(fs.getRoot(), scope));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -11022,14 +11015,14 @@ var parsers = Immutable.List([
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var EXTENSIONS_MARKDOWN = require(&#x27;./constants/extsMarkdown&#x27;);
-var EXTENSIONS_ASCIIDOC = require(&#x27;./constants/extsAsciidoc&#x27;);
-var Parser = require(&#x27;./models/parser&#x27;);
+var EXTENSIONS_MARKDOWN = require('./constants/extsMarkdown');
+var EXTENSIONS_ASCIIDOC = require('./constants/extsAsciidoc');
+var Parser = require('./models/parser');
 
 // This list is ordered by priority of parsers to use
 var parsers = Immutable.List([
-   Parser.<span class="apidocCodeKeywordSpan">create</span>(&#x27;markdown&#x27;, EXTENSIONS_MARKDOWN, markdownParser),
-   Parser.create(&#x27;asciidoc&#x27;, EXTENSIONS_ASCIIDOC, asciidocParser)
+   Parser.<span class="apidocCodeKeywordSpan">create</span>('markdown', EXTENSIONS_MARKDOWN, markdownParser),
+   Parser.create('asciidoc', EXTENSIONS_ASCIIDOC, asciidocParser)
 ]);
 
 /**
@@ -11089,7 +11082,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         filename = that.resolve(filename);
-        var exists = that.get(&#x27;fsExists&#x27;);
+        var exists = that.get('fsExists');
 
         return exists(filename);
     });
@@ -11127,7 +11120,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getRoot = function () {
-    return this.get(&#x27;root&#x27;);
+    return this.get('root');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -11161,7 +11154,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">listAllFiles = function (dirName, filterFn) {
     var that = this;
-    dirName = dirName || &#x27;.&#x27;;
+    dirName = dirName || '.';
 
     return this.readDir(dirName)
     .then(function(files) {
@@ -11169,7 +11162,7 @@ var parsers = Immutable.List([
             var isDirectory = pathIsFolder(file);
             var newDirName = path.join(dirName, file);
 
-            if (filterFn &#x26;&#x26; filterFn(newDirName) === false) {
+            if (filterFn &amp;&amp; filterFn(newDirName) === false) {
                 return out;
             }
 
@@ -11216,13 +11209,13 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">loadAsObject = function (filename) {
     var that = this;
-    var fsLoadObject = this.get(&#x27;fsLoadObject&#x27;);
+    var fsLoadObject = this.get('fsLoadObject');
 
     return this.exists(filename)
     .then(function(exists) {
         if (!exists) {
-            var err = new Error(&#x27;Module doesn\&#x27;t exist&#x27;);
-            err.code = &#x27;MODULE_NOT_FOUND&#x27;;
+            var err = new Error('Module doesn\'t exist');
+            err.code = 'MODULE_NOT_FOUND';
 
             throw err;
         }
@@ -11255,7 +11248,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         filename = that.resolve(filename);
-        var read = that.get(&#x27;fsReadFile&#x27;);
+        var read = that.get('fsReadFile');
 
         return read(filename);
     });
@@ -11275,7 +11268,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">readAsStream = function (filename) {
     var that = this;
     var filepath = that.resolve(filename);
-    var fsReadAsStream = this.get(&#x27;fsReadAsStream&#x27;);
+    var fsReadAsStream = this.get('fsReadAsStream');
 
     if (fsReadAsStream) {
         return Promise(fsReadAsStream(filepath));
@@ -11302,7 +11295,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">readAsString = function (filename, encoding) {
-    encoding = encoding || &#x27;utf8&#x27;;
+    encoding = encoding || 'utf8';
 
     return this.read(filename)
     .then(function(buf) {
@@ -11327,7 +11320,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         var dirpath = that.resolve(dirname);
-        var readDir = that.get(&#x27;fsReadDir&#x27;);
+        var readDir = that.get('fsReadDir');
 
         return readDir(dirpath);
     })
@@ -11380,7 +11373,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         var filepath = that.resolve(filename);
-        var stat = that.get(&#x27;fsStatFile&#x27;);
+        var stat = that.get('fsStatFile');
 
         return stat(filepath);
     })
@@ -11488,7 +11481,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         filename = that.resolve(filename);
-        var exists = that.get(&#x27;fsExists&#x27;);
+        var exists = that.get('fsExists');
 
         return exists(filename);
     });
@@ -11536,7 +11529,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getRoot = function () {
-    return this.get(&#x27;root&#x27;);
+    return this.get('root');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -11580,7 +11573,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">listAllFiles = function (dirName, filterFn) {
     var that = this;
-    dirName = dirName || &#x27;.&#x27;;
+    dirName = dirName || '.';
 
     return this.readDir(dirName)
     .then(function(files) {
@@ -11588,7 +11581,7 @@ var parsers = Immutable.List([
             var isDirectory = pathIsFolder(file);
             var newDirName = path.join(dirName, file);
 
-            if (filterFn &#x26;&#x26; filterFn(newDirName) === false) {
+            if (filterFn &amp;&amp; filterFn(newDirName) === false) {
                 return out;
             }
 
@@ -11645,13 +11638,13 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">loadAsObject = function (filename) {
     var that = this;
-    var fsLoadObject = this.get(&#x27;fsLoadObject&#x27;);
+    var fsLoadObject = this.get('fsLoadObject');
 
     return this.exists(filename)
     .then(function(exists) {
         if (!exists) {
-            var err = new Error(&#x27;Module doesn\&#x27;t exist&#x27;);
-            err.code = &#x27;MODULE_NOT_FOUND&#x27;;
+            var err = new Error('Module doesn\'t exist');
+            err.code = 'MODULE_NOT_FOUND';
 
             throw err;
         }
@@ -11689,7 +11682,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         filename = that.resolve(filename);
-        var read = that.get(&#x27;fsReadFile&#x27;);
+        var read = that.get('fsReadFile');
 
         return read(filename);
     });
@@ -11714,7 +11707,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">readAsStream = function (filename) {
     var that = this;
     var filepath = that.resolve(filename);
-    var fsReadAsStream = this.get(&#x27;fsReadAsStream&#x27;);
+    var fsReadAsStream = this.get('fsReadAsStream');
 
     if (fsReadAsStream) {
         return Promise(fsReadAsStream(filepath));
@@ -11746,7 +11739,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">readAsString = function (filename, encoding) {
-    encoding = encoding || &#x27;utf8&#x27;;
+    encoding = encoding || 'utf8';
 
     return this.read(filename)
     .then(function(buf) {
@@ -11776,7 +11769,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         var dirpath = that.resolve(dirname);
-        var readDir = that.get(&#x27;fsReadDir&#x27;);
+        var readDir = that.get('fsReadDir');
 
         return readDir(dirpath);
     })
@@ -11839,7 +11832,7 @@ var parsers = Immutable.List([
     return Promise()
     .then(function() {
         var filepath = that.resolve(filename);
-        var stat = that.get(&#x27;fsStatFile&#x27;);
+        var stat = that.get('fsStatFile');
 
         return stat(filepath);
     })
@@ -11865,7 +11858,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function reduceScope(fs, scope) {
-    return fs.set(&#x27;root&#x27;, path.join(fs.getRoot(), scope));
+    return fs.set('root', path.join(fs.getRoot(), scope));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12060,7 +12053,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getMTime = function () {
-    return this.get(&#x27;mtime&#x27;);
+    return this.get('mtime');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12090,7 +12083,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getPath = function () {
-    return this.get(&#x27;path&#x27;);
+    return this.get('path');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12176,7 +12169,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getMTime = function () {
-    return this.get(&#x27;mtime&#x27;);
+    return this.get('mtime');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12216,7 +12209,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getPath = function () {
-    return this.get(&#x27;path&#x27;);
+    return this.get('path');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12295,7 +12288,7 @@ var parsers = Immutable.List([
     var entries = glossary.getEntries();
 
     entries = entries.set(id, entry);
-    return glossary.set(&#x27;entries&#x27;, entries);
+    return glossary.set('entries', entries);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12365,7 +12358,7 @@ var parsers = Immutable.List([
     var entries = glossary.getEntries();
 
     entries = entries.set(id, entry);
-    return glossary.set(&#x27;entries&#x27;, entries);
+    return glossary.set('entries', entries);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12471,7 +12464,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getEntries = function () {
-    return this.get(&#x27;entries&#x27;);
+    return this.get('entries');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12504,7 +12497,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12556,7 +12549,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getEntries = function () {
-    return this.get(&#x27;entries&#x27;);
+    return this.get('entries');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12599,7 +12592,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12668,7 +12661,7 @@ var parsers = Immutable.List([
         var logger = output.getLogger();
         var rootFolder = output.getRoot();
 
-        logger.debug.ln(&#x27;cleanup folder &#x22;&#x27; + rootFolder + &#x27;&#x22;&#x27;);
+        logger.debug.ln('cleanup folder "' + rootFolder + '"');
         return fs.ensureFolder(rootFolder)
             .thenResolve(output);
     })
@@ -12681,7 +12674,7 @@ var parsers = Immutable.List([
         var end = Date.now();
         var duration = (end - start)/1000;
 
-        logger.info.ok(&#x27;generation finished with success in &#x27; + duration.toFixed(1) + &#x27;s !&#x27;);
+        logger.info.ok('generation finished with success in ' + duration.toFixed(1) + 's !');
 
         return output;
     });
@@ -12739,7 +12732,7 @@ var parsers = Immutable.List([
         var logger = output.getLogger();
         var rootFolder = output.getRoot();
 
-        logger.debug.ln(&#x27;cleanup folder &#x22;&#x27; + rootFolder + &#x27;&#x22;&#x27;);
+        logger.debug.ln('cleanup folder "' + rootFolder + '"');
         return fs.ensureFolder(rootFolder)
             .thenResolve(output);
     })
@@ -12752,7 +12745,7 @@ var parsers = Immutable.List([
         var end = Date.now();
         var duration = (end - start)/1000;
 
-        logger.info.ok(&#x27;generation finished with success in &#x27; + duration.toFixed(1) + &#x27;s !&#x27;);
+        logger.info.ok('generation finished with success in ' + duration.toFixed(1) + 's !');
 
         return output;
     });
@@ -12901,7 +12894,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getAttributes = function () {
-    return this.get(&#x27;attributes&#x27;);
+    return this.get('attributes');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12916,7 +12909,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getContent = function () {
-    return this.get(&#x27;content&#x27;);
+    return this.get('content');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12931,7 +12924,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDir = function () {
-    return this.get(&#x27;dir&#x27;);
+    return this.get('dir');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12946,7 +12939,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12983,7 +12976,7 @@ var parsers = Immutable.List([
         return content;
     }
 
-    var frontMatter = &#x27;---\n&#x27; + yaml.safeDump(attrs.toJS(), { skipInvalid: true }) + &#x27;---\n\n&#x27;;
+    var frontMatter = '---\n' + yaml.safeDump(attrs.toJS(), { skipInvalid: true }) + '---\n\n';
     return (frontMatter + content);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13004,7 +12997,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getAttributes = function () {
-    return this.get(&#x27;attributes&#x27;);
+    return this.get('attributes');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -13024,7 +13017,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getContent = function () {
-    return this.get(&#x27;content&#x27;);
+    return this.get('content');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -13044,7 +13037,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDir = function () {
-    return this.get(&#x27;dir&#x27;);
+    return this.get('dir');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -13064,7 +13057,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -13111,7 +13104,7 @@ var parsers = Immutable.List([
         return content;
     }
 
-    var frontMatter = &#x27;---\n&#x27; + yaml.safeDump(attrs.toJS(), { skipInvalid: true }) + &#x27;---\n\n&#x27;;
+    var frontMatter = '---\n' + yaml.safeDump(attrs.toJS(), { skipInvalid: true }) + '---\n\n';
     return (frontMatter + content);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13158,8 +13151,8 @@ var parsers = Immutable.List([
     }
 
     return timing.measure(
-        &#x27;parse.listAssets&#x27;,
-        fs.listAllFiles(&#x27;.&#x27;, filterFile)
+        'parse.listAssets',
+        fs.listAllFiles('.', filterFile)
     );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13177,7 +13170,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function lookupStructureFile(book, type) {
     var config = book.getConfig();
 
-    var fileToSearch = config.getValue([&#x27;structure&#x27;, type]);
+    var fileToSearch = config.getValue(['structure', type]);
 
     return findParsableFile(book, fileToSearch);
 }</pre></li>
@@ -13195,7 +13188,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseBook(book) {
     return timing.measure(
-        &#x27;parse.book&#x27;,
+        'parse.book',
         Promise(book)
         .then(parseIgnore)
         .then(parseConfig)
@@ -13243,7 +13236,7 @@ var parsers = Immutable.List([
             });
         })
         .fail(function(err) {
-            if (err.code != &#x27;MODULE_NOT_FOUND&#x27;) throw(err);
+            if (err.code != 'MODULE_NOT_FOUND') throw(err);
             else return Promise(false);
         });
     })
@@ -13278,16 +13271,16 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function parseGlossary(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;glossary&#x27;)
+    return parseStructureFile(book, 'glossary')
     .spread(function(file, entries) {
         if (!file) {
             return book;
         }
 
-        logger.debug.ln(&#x27;glossary index file found at&#x27;, file.getPath());
+        logger.debug.ln('glossary index file found at', file.getPath());
 
         var glossary = Glossary.createFromEntries(file, entries);
-        return book.set(&#x27;glossary&#x27;, glossary);
+        return book.set('glossary', glossary);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13304,7 +13297,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseIgnore(book) {
     if (book.isLanguageBook()) {
-        return Promise.reject(new Error(&#x27;Ignore files could be parsed for language books&#x27;));
+        return Promise.reject(new Error('Ignore files could be parsed for language books'));
     }
 
     var fs = book.getFS();
@@ -13340,7 +13333,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function parseLanguages(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;langs&#x27;)
+    return parseStructureFile(book, 'langs')
     .spread(function(file, result) {
         if (!file) {
             return book;
@@ -13348,10 +13341,10 @@ var parsers = Immutable.List([
 
         var languages = Languages.createFromList(file, result);
 
-        logger.debug.ln(&#x27;languages index file found at&#x27;, file.getPath());
-        logger.info.ln(&#x27;parsing multilingual book, with&#x27;, languages.getList().size, &#x27;languages&#x27;);
+        logger.debug.ln('languages index file found at', file.getPath());
+        logger.info.ln('parsing multilingual book, with', languages.getList().size, 'languages');
 
-        return book.set(&#x27;languages&#x27;, languages);
+        return book.set('languages', languages);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13416,7 +13409,7 @@ var parsers = Immutable.List([
 
     // Parse pages from summary
     return timing.measure(
-        &#x27;parse.listPages&#x27;,
+        'parse.listPages',
         walkSummary(summary, function(article) {
             if (!article.isPage()) return;
 
@@ -13427,7 +13420,7 @@ var parsers = Immutable.List([
 
             return parseFilePage(book, filepath)
             .then(function(page) {
-                // file doesn&#x27;t exist
+                // file doesn't exist
                 if (!page) {
                     return;
                 }
@@ -13447,7 +13440,7 @@ var parsers = Immutable.List([
 
         return parseFilePage(book, file.getPath())
         .then(function(page) {
-            // file doesn&#x27;t exist
+            // file doesn't exist
             if (!page) {
                 return;
             }
@@ -13475,16 +13468,16 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function parseReadme(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;readme&#x27;)
+    return parseStructureFile(book, 'readme')
     .spread(function(file, result) {
         if (!file) {
-            throw new error.FileNotFoundError({ filename: &#x27;README&#x27; });
+            throw new error.FileNotFoundError({ filename: 'README' });
         }
 
-        logger.debug.ln(&#x27;readme found at&#x27;, file.getPath());
+        logger.debug.ln('readme found at', file.getPath());
 
         var readme = Readme.create(file, result);
-        return book.set(&#x27;readme&#x27;, readme);
+        return book.set('readme', readme);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13504,24 +13497,24 @@ var parsers = Immutable.List([
     var logger = book.getLogger();
     var readmeFile = readme.getFile();
 
-    return parseStructureFile(book, &#x27;summary&#x27;)
+    return parseStructureFile(book, 'summary')
     .spread(function(file, result) {
         var summary;
 
         if (!file) {
-            logger.warn.ln(&#x27;no summary file in this book&#x27;);
+            logger.warn.ln('no summary file in this book');
             summary = Summary();
         } else {
-            logger.debug.ln(&#x27;summary file found at&#x27;, file.getPath());
+            logger.debug.ln('summary file found at', file.getPath());
             summary = Summary.createFromParts(file, result.parts);
         }
 
         // Insert readme as first entry if not in SUMMARY.md
         var readmeArticle = summary.getByPath(readmeFile.getPath());
 
-        if (readmeFile.exists() &#x26;&#x26; !readmeArticle) {
+        if (readmeFile.exists() &amp;&amp; !readmeArticle) {
             summary = SummaryModifier.unshiftArticle(summary, {
-                title: &#x27;Introduction&#x27;,
+                title: 'Introduction',
                 ref: readmeFile.getPath()
             });
         }
@@ -13574,8 +13567,8 @@ var parsers = Immutable.List([
     }
 
     return timing.measure(
-        &#x27;parse.listAssets&#x27;,
-        fs.listAllFiles(&#x27;.&#x27;, filterFile)
+        'parse.listAssets',
+        fs.listAllFiles('.', filterFile)
     );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13598,7 +13591,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function lookupStructureFile(book, type) {
     var config = book.getConfig();
 
-    var fileToSearch = config.getValue([&#x27;structure&#x27;, type]);
+    var fileToSearch = config.getValue(['structure', type]);
 
     return findParsableFile(book, fileToSearch);
 }</pre></li>
@@ -13621,7 +13614,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseBook(book) {
     return timing.measure(
-        &#x27;parse.book&#x27;,
+        'parse.book',
         Promise(book)
         .then(parseIgnore)
         .then(parseConfig)
@@ -13674,7 +13667,7 @@ var parsers = Immutable.List([
             });
         })
         .fail(function(err) {
-            if (err.code != &#x27;MODULE_NOT_FOUND&#x27;) throw(err);
+            if (err.code != 'MODULE_NOT_FOUND') throw(err);
             else return Promise(false);
         });
     })
@@ -13714,16 +13707,16 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function parseGlossary(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;glossary&#x27;)
+    return parseStructureFile(book, 'glossary')
     .spread(function(file, entries) {
         if (!file) {
             return book;
         }
 
-        logger.debug.ln(&#x27;glossary index file found at&#x27;, file.getPath());
+        logger.debug.ln('glossary index file found at', file.getPath());
 
         var glossary = Glossary.createFromEntries(file, entries);
-        return book.set(&#x27;glossary&#x27;, glossary);
+        return book.set('glossary', glossary);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13745,7 +13738,7 @@ var parsers = Immutable.List([
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseIgnore(book) {
     if (book.isLanguageBook()) {
-        return Promise.reject(new Error(&#x27;Ignore files could be parsed for language books&#x27;));
+        return Promise.reject(new Error('Ignore files could be parsed for language books'));
     }
 
     var fs = book.getFS();
@@ -13786,7 +13779,7 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function parseLanguages(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;langs&#x27;)
+    return parseStructureFile(book, 'langs')
     .spread(function(file, result) {
         if (!file) {
             return book;
@@ -13794,10 +13787,10 @@ var parsers = Immutable.List([
 
         var languages = Languages.createFromList(file, result);
 
-        logger.debug.ln(&#x27;languages index file found at&#x27;, file.getPath());
-        logger.info.ln(&#x27;parsing multilingual book, with&#x27;, languages.getList().size, &#x27;languages&#x27;);
+        logger.debug.ln('languages index file found at', file.getPath());
+        logger.info.ln('parsing multilingual book, with', languages.getList().size, 'languages');
 
-        return book.set(&#x27;languages&#x27;, languages);
+        return book.set('languages', languages);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13877,7 +13870,7 @@ var parsers = Immutable.List([
 
     // Parse pages from summary
     return timing.measure(
-        &#x27;parse.listPages&#x27;,
+        'parse.listPages',
         walkSummary(summary, function(article) {
             if (!article.isPage()) return;
 
@@ -13888,7 +13881,7 @@ var parsers = Immutable.List([
 
             return parseFilePage(book, filepath)
             .then(function(page) {
-                // file doesn&#x27;t exist
+                // file doesn't exist
                 if (!page) {
                     return;
                 }
@@ -13908,7 +13901,7 @@ var parsers = Immutable.List([
 
         return parseFilePage(book, file.getPath())
         .then(function(page) {
-            // file doesn&#x27;t exist
+            // file doesn't exist
             if (!page) {
                 return;
             }
@@ -13941,16 +13934,16 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">function parseReadme(book) {
     var logger = book.getLogger();
 
-    return parseStructureFile(book, &#x27;readme&#x27;)
+    return parseStructureFile(book, 'readme')
     .spread(function(file, result) {
         if (!file) {
-            throw new error.FileNotFoundError({ filename: &#x27;README&#x27; });
+            throw new error.FileNotFoundError({ filename: 'README' });
         }
 
-        logger.debug.ln(&#x27;readme found at&#x27;, file.getPath());
+        logger.debug.ln('readme found at', file.getPath());
 
         var readme = Readme.create(file, result);
-        return book.set(&#x27;readme&#x27;, readme);
+        return book.set('readme', readme);
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -13975,24 +13968,24 @@ var parsers = Immutable.List([
     var logger = book.getLogger();
     var readmeFile = readme.getFile();
 
-    return parseStructureFile(book, &#x27;summary&#x27;)
+    return parseStructureFile(book, 'summary')
     .spread(function(file, result) {
         var summary;
 
         if (!file) {
-            logger.warn.ln(&#x27;no summary file in this book&#x27;);
+            logger.warn.ln('no summary file in this book');
             summary = Summary();
         } else {
-            logger.debug.ln(&#x27;summary file found at&#x27;, file.getPath());
+            logger.debug.ln('summary file found at', file.getPath());
             summary = Summary.createFromParts(file, result.parts);
         }
 
         // Insert readme as first entry if not in SUMMARY.md
         var readmeArticle = summary.getByPath(readmeFile.getPath());
 
-        if (readmeFile.exists() &#x26;&#x26; !readmeArticle) {
+        if (readmeFile.exists() &amp;&amp; !readmeArticle) {
             summary = SummaryModifier.unshiftArticle(summary, {
-                title: &#x27;Introduction&#x27;,
+                title: 'Introduction',
                 ref: readmeFile.getPath()
             });
         }
@@ -14061,14 +14054,14 @@ var parsers = Immutable.List([
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var EXTENSIONS_MARKDOWN = require(&#x27;./constants/extsMarkdown&#x27;);
-var EXTENSIONS_ASCIIDOC = require(&#x27;./constants/extsAsciidoc&#x27;);
-var Parser = require(&#x27;./models/parser&#x27;);
+var EXTENSIONS_MARKDOWN = require('./constants/extsMarkdown');
+var EXTENSIONS_ASCIIDOC = require('./constants/extsAsciidoc');
+var Parser = require('./models/parser');
 
 // This list is ordered by priority of parsers to use
 var parsers = Immutable.List([
-   Parser.<span class="apidocCodeKeywordSpan">create</span>(&#x27;markdown&#x27;, EXTENSIONS_MARKDOWN, markdownParser),
-   Parser.create(&#x27;asciidoc&#x27;, EXTENSIONS_ASCIIDOC, asciidocParser)
+   Parser.<span class="apidocCodeKeywordSpan">create</span>('markdown', EXTENSIONS_MARKDOWN, markdownParser),
+   Parser.create('asciidoc', EXTENSIONS_ASCIIDOC, asciidocParser)
 ]);
 
 /**
@@ -14088,12 +14081,12 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">createFromString = function (s) {
-    var parts = s.split(&#x27;@&#x27;);
+    var parts = s.split('@');
     var name = parts[0];
-    var version = parts.slice(1).join(&#x27;@&#x27;);
+    var version = parts.slice(1).join('@');
     var enabled = true;
 
-    if (name[0] === &#x27;-&#x27;) {
+    if (name[0] === '-') {
         enabled = false;
         name = name.slice(1);
     }
@@ -14123,8 +14116,8 @@ var parsers = Immutable.List([
                 return PluginDependency.createFromString(entry);
             } else {
                 return PluginDependency({
-                    name: entry.get(&#x27;name&#x27;),
-                    version: entry.get(&#x27;version&#x27;)
+                    name: entry.get('name'),
+                    version: entry.get('version')
                 });
             }
         })
@@ -14145,7 +14138,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">listFromString = function (s) {
-    var parts = s.split(&#x27;,&#x27;);
+    var parts = s.split(',');
     return PluginDependency.listFromArray(parts);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -14163,15 +14156,15 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">listToArray = function (list) {
     return list
         .map(function(dep) {
-            var result = &#x27;&#x27;;
+            var result = '';
 
             if (!dep.isEnabled()) {
-                result += &#x27;-&#x27;;
+                result += '-';
             }
 
             result += dep.getName();
             if (dep.getVersion() !== DEFAULT_VERSION) {
-                result += &#x27;@&#x27; + dep.getVersion();
+                result += '@' + dep.getVersion();
             }
 
             return result;
@@ -14223,14 +14216,14 @@ var parsers = Immutable.List([
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var EXTENSIONS_MARKDOWN = require(&#x27;./constants/extsMarkdown&#x27;);
-var EXTENSIONS_ASCIIDOC = require(&#x27;./constants/extsAsciidoc&#x27;);
-var Parser = require(&#x27;./models/parser&#x27;);
+var EXTENSIONS_MARKDOWN = require('./constants/extsMarkdown');
+var EXTENSIONS_ASCIIDOC = require('./constants/extsAsciidoc');
+var Parser = require('./models/parser');
 
 // This list is ordered by priority of parsers to use
 var parsers = Immutable.List([
-   Parser.<span class="apidocCodeKeywordSpan">create</span>(&#x27;markdown&#x27;, EXTENSIONS_MARKDOWN, markdownParser),
-   Parser.create(&#x27;asciidoc&#x27;, EXTENSIONS_ASCIIDOC, asciidocParser)
+   Parser.<span class="apidocCodeKeywordSpan">create</span>('markdown', EXTENSIONS_MARKDOWN, markdownParser),
+   Parser.create('asciidoc', EXTENSIONS_ASCIIDOC, asciidocParser)
 ]);
 
 /**
@@ -14255,12 +14248,12 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">createFromString = function (s) {
-    var parts = s.split(&#x27;@&#x27;);
+    var parts = s.split('@');
     var name = parts[0];
-    var version = parts.slice(1).join(&#x27;@&#x27;);
+    var version = parts.slice(1).join('@');
     var enabled = true;
 
-    if (name[0] === &#x27;-&#x27;) {
+    if (name[0] === '-') {
         enabled = false;
         name = name.slice(1);
     }
@@ -14295,8 +14288,8 @@ var parsers = Immutable.List([
                 return PluginDependency.createFromString(entry);
             } else {
                 return PluginDependency({
-                    name: entry.get(&#x27;name&#x27;),
-                    version: entry.get(&#x27;version&#x27;)
+                    name: entry.get('name'),
+                    version: entry.get('version')
                 });
             }
         })
@@ -14322,7 +14315,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">listFromString = function (s) {
-    var parts = s.split(&#x27;,&#x27;);
+    var parts = s.split(',');
     return PluginDependency.listFromArray(parts);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -14345,15 +14338,15 @@ var parsers = Immutable.List([
     <li>description and source-code<pre class="apidocCodePre">listToArray = function (list) {
     return list
         .map(function(dep) {
-            var result = &#x27;&#x27;;
+            var result = '';
 
             if (!dep.isEnabled()) {
-                result += &#x27;-&#x27;;
+                result += '-';
             }
 
             result += dep.getName();
             if (dep.getVersion() !== DEFAULT_VERSION) {
-                result += &#x27;@&#x27; + dep.getVersion();
+                result += '@' + dep.getVersion();
             }
 
             return result;
@@ -14428,7 +14421,7 @@ var parsers = Immutable.List([
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getName = function () {
-    return this.get(&#x27;name&#x27;);
+    return this.get('name');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * Return a specific parser by its name
@@ -14474,7 +14467,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getVersion = function () {
-    return this.get(&#x27;version&#x27;);
+    return this.get('version');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14489,7 +14482,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isEnabled = function () {
-    return this.get(&#x27;enabled&#x27;);
+    return this.get('enabled');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14523,7 +14516,7 @@ function getParser(name) {
         state = !this.isEnabled();
     }
 
-    return this.set(&#x27;enabled&#x27;, state);
+    return this.set('enabled', state);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14551,7 +14544,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getName = function () {
-    return this.get(&#x27;name&#x27;);
+    return this.get('name');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * Return a specific parser by its name
@@ -14607,7 +14600,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getVersion = function () {
-    return this.get(&#x27;version&#x27;);
+    return this.get('version');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14627,7 +14620,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isEnabled = function () {
-    return this.get(&#x27;enabled&#x27;);
+    return this.get('enabled');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14671,7 +14664,7 @@ function getParser(name) {
         state = !this.isEnabled();
     }
 
-    return this.set(&#x27;enabled&#x27;, state);
+    return this.set('enabled', state);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14818,7 +14811,7 @@ function getParser(name) {
     return parts.reduce(function(result, part) {
         if (result) return result;
 
-        if (partIter &#x26;&#x26; partIter(part)) return part;
+        if (partIter &amp;&amp; partIter(part)) return part;
         return SummaryArticle.findArticle(part, iter);
     }, null);
 }</pre></li>
@@ -14879,7 +14872,7 @@ function getParser(name) {
         var articlePath = article.getPath();
 
         return (
-            articlePath &#x26;&#x26;
+            articlePath &amp;&amp;
             LocationUtils.areIdenticalPaths(articlePath, filePath)
         );
     });
@@ -14897,7 +14890,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14994,7 +14987,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getParts = function () {
-    return this.get(&#x27;parts&#x27;);
+    return this.get('parts');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15082,7 +15075,7 @@ function getParser(name) {
     return parts.reduce(function(result, part) {
         if (result) return result;
 
-        if (partIter &#x26;&#x26; partIter(part)) return part;
+        if (partIter &amp;&amp; partIter(part)) return part;
         return SummaryArticle.findArticle(part, iter);
     }, null);
 }</pre></li>
@@ -15158,7 +15151,7 @@ function getParser(name) {
         var articlePath = article.getPath();
 
         return (
-            articlePath &#x26;&#x26;
+            articlePath &amp;&amp;
             LocationUtils.areIdenticalPaths(articlePath, filePath)
         );
     });
@@ -15181,7 +15174,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFile = function () {
-    return this.get(&#x27;file&#x27;);
+    return this.get('file');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15303,7 +15296,7 @@ function getParser(name) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getParts = function () {
-    return this.get(&#x27;parts&#x27;);
+    return this.get('parts');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15429,10 +15422,10 @@ function getParser(name) {
         return summary;
     }
 
-    part = part.set(&#x27;title&#x27;, newTitle);
+    part = part.set('title', newTitle);
     parts = parts.set(index, part);
 
-    return summary.set(&#x27;parts&#x27;, parts);
+    return summary.set('parts', parts);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15463,7 +15456,7 @@ function getParser(name) {
     articles = articles.insert(index, article);
 
     // Reindex the level from here
-    parent = parent.set(&#x27;articles&#x27;, articles);
+    parent = parent.set('articles', articles);
     parent = indexArticleLevels(parent);
 
     return mergeAtLevel(summary, parent.getLevel(), parent);
@@ -15484,7 +15477,7 @@ function getParser(name) {
     part = SummaryPart(part);
 
     var parts = summary.getParts().insert(index, part);
-    return indexLevels(summary.set(&#x27;parts&#x27;, parts));
+    return indexLevels(summary.set('parts', parts));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15528,7 +15521,7 @@ function getParser(name) {
 
     var targetLevel = increment(afterTargetLevel);
 
-    if (targetLevel &#x3c; origin) {
+    if (targetLevel &lt; origin) {
         // Remove first
         var removed = removeArticle(summary, originLevel);
         // Insert then
@@ -15569,7 +15562,7 @@ function getParser(name) {
 
     // Remove from children
     articles = articles.remove(index);
-    parent = parent.set(&#x27;articles&#x27;, articles);
+    parent = parent.set('articles', articles);
 
     // Reindex the level from here
     parent = indexArticleLevels(parent);
@@ -15590,7 +15583,7 @@ function getParser(name) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function removePart(summary, index) {
     var parts = summary.getParts().remove(index);
-    return indexLevels(summary.set(&#x27;parts&#x27;, parts));
+    return indexLevels(summary.set('parts', parts));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15612,10 +15605,10 @@ function getParser(name) {
 
     var articles = part.getArticles();
     articles = articles.unshift(article);
-    part = part.set(&#x27;articles&#x27;, articles);
+    part = part.set('articles', articles);
 
     parts = parts.set(0, part);
-    summary = summary.set(&#x27;parts&#x27;, parts);
+    summary = summary.set('parts', parts);
 
     return indexLevels(summary);
 }</pre></li>
@@ -15688,10 +15681,10 @@ function getParser(name) {
         return summary;
     }
 
-    part = part.set(&#x27;title&#x27;, newTitle);
+    part = part.set('title', newTitle);
     parts = parts.set(index, part);
 
-    return summary.set(&#x27;parts&#x27;, parts);
+    return summary.set('parts', parts);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15727,7 +15720,7 @@ function getParser(name) {
     articles = articles.insert(index, article);
 
     // Reindex the level from here
-    parent = parent.set(&#x27;articles&#x27;, articles);
+    parent = parent.set('articles', articles);
     parent = indexArticleLevels(parent);
 
     return mergeAtLevel(summary, parent.getLevel(), parent);
@@ -15753,7 +15746,7 @@ function getParser(name) {
     part = SummaryPart(part);
 
     var parts = summary.getParts().insert(index, part);
-    return indexLevels(summary.set(&#x27;parts&#x27;, parts));
+    return indexLevels(summary.set('parts', parts));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15807,7 +15800,7 @@ function getParser(name) {
 
     var targetLevel = increment(afterTargetLevel);
 
-    if (targetLevel &#x3c; origin) {
+    if (targetLevel &lt; origin) {
         // Remove first
         var removed = removeArticle(summary, originLevel);
         // Insert then
@@ -15853,7 +15846,7 @@ function getParser(name) {
 
     // Remove from children
     articles = articles.remove(index);
-    parent = parent.set(&#x27;articles&#x27;, articles);
+    parent = parent.set('articles', articles);
 
     // Reindex the level from here
     parent = indexArticleLevels(parent);
@@ -15879,7 +15872,7 @@ function getParser(name) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function removePart(summary, index) {
     var parts = summary.getParts().remove(index);
-    return indexLevels(summary.set(&#x27;parts&#x27;, parts));
+    return indexLevels(summary.set('parts', parts));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -15906,10 +15899,10 @@ function getParser(name) {
 
     var articles = part.getArticles();
     articles = articles.unshift(article);
-    part = part.set(&#x27;articles&#x27;, articles);
+    part = part.set('articles', articles);
 
     parts = parts.set(0, part);
-    summary = summary.set(&#x27;parts&#x27;, parts);
+    summary = summary.set('parts', parts);
 
     return indexLevels(summary);
 }</pre></li>
@@ -16228,7 +16221,7 @@ function getParser(name) {
     return semver.satisfies(VERSION_STABLE, condition);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-We can&#x27;t directly use samver.satisfies since it will break all plugins when gitbook version is a prerelease (beta, alpha)
+We can't directly use samver.satisfies since it will break all plugins when gitbook version is a prerelease (beta, alpha)
 
 @param {String} condition
 @return {Boolean}
@@ -16265,7 +16258,7 @@ version: pkg.version,
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function initBook(rootFolder) {
-    var extension = &#x27;.md&#x27;;
+    var extension = '.md';
 
     return fs.mkdirp(rootFolder)
 
@@ -16276,9 +16269,9 @@ version: pkg.version,
 
         return Parse.parseReadme(book)
 
-        // Setup default readme if doesn&#x27;t found one
+        // Setup default readme if doesn't found one
         .fail(function() {
-            var readmeFile = File.createWithFilepath(&#x27;README&#x27; + extension);
+            var readmeFile = File.createWithFilepath('README' + extension);
             var readme = Readme.create(readmeFile);
             return book.setReadme(readme);
         });
@@ -16289,7 +16282,7 @@ version: pkg.version,
         var logger = book.getLogger();
         var summary = book.getSummary();
         var summaryFile = summary.getFile();
-        var summaryFilename = summaryFile.getPath() || (&#x27;SUMMARY&#x27; + extension);
+        var summaryFilename = summaryFile.getPath() || ('SUMMARY' + extension);
 
         var articles = summary.getArticlesAsList();
 
@@ -16304,8 +16297,8 @@ version: pkg.version,
             return fs.assertFile(filePath, function() {
                 return fs.ensureFile(filePath)
                 .then(function() {
-                    logger.info.ln(&#x27;create&#x27;, article.getPath());
-                    return fs.writeFile(filePath, &#x27;# &#x27; + article.getTitle() + &#x27;\n\n&#x27;);
+                    logger.info.ln('create', article.getPath());
+                    return fs.writeFile(filePath, '# ' + article.getTitle() + '\n\n');
                 });
             });
         })
@@ -16316,14 +16309,14 @@ version: pkg.version,
 
             return fs.ensureFile(filePath)
             .then(function() {
-                logger.info.ln(&#x27;create &#x27; + path.basename(filePath));
+                logger.info.ln('create ' + path.basename(filePath));
                 return fs.writeFile(filePath, summary.toText(extension));
             });
         })
 
         // Log end
         .then(function() {
-            logger.info.ln(&#x27;initialization is finished&#x27;);
+            logger.info.ln('initialization is finished');
         });
     });
 }</pre></li>
@@ -16395,3 +16388,4 @@ version: pkg.version,
     ]
 </div>
 </div>
+</body></html>
