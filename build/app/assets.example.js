@@ -291,14 +291,15 @@ utility2-comment -->\n\
         local.assetsDict['/assets.example.js'] =
             local.assetsDict['/assets.example.js'] ||
             local.fs.readFileSync(__filename, 'utf8');
+        // bug-workaround - long $npm_package_buildCustomOrg
+        /* jslint-ignore-begin */
         local.assetsDict['/assets.npmdoc_gitbook.rollup.js'] =
             local.assetsDict['/assets.npmdoc_gitbook.rollup.js'] ||
             local.fs.readFileSync(
-                // buildCustomOrg-hack
-                local.npmdoc_gitbook.__dirname +
-                    '/lib.npmdoc_gitbook.js',
+                local.npmdoc_gitbook.__dirname + '/lib.npmdoc_gitbook.js',
                 'utf8'
             ).replace((/^#!/), '//');
+        /* jslint-ignore-end */
         local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';
         // if $npm_config_timeout_exit exists,
         // then exit this process after $npm_config_timeout_exit ms
