@@ -1,4 +1,7 @@
-# api documentation for  [gitbook (v3.2.2)](https://www.gitbook.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-gitbook.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gitbook) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gitbook.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gitbook)
+# npmdoc-gitbook
+
+#### api documentation for  [gitbook (v3.2.2)](https://www.gitbook.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-gitbook.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gitbook) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gitbook.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gitbook)
+
 #### Library and cmd utility to generate GitBooks
 
 [![NPM](https://nodei.co/npm/gitbook.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gitbook)
@@ -18,24 +21,12 @@
 ```json
 
 {
-    "author": {
-        "name": "FriendCode Inc."
-    },
-    "bin": {
-        "gitbook": "./bin/gitbook.js"
-    },
+    "name": "gitbook",
+    "version": "3.2.2",
+    "homepage": "https://www.gitbook.com",
+    "description": "Library and cmd utility to generate GitBooks",
+    "main": "lib/index.js",
     "browser": "./lib/browser.js",
-    "bugs": {
-        "url": "https://github.com/GitbookIO/gitbook/issues"
-    },
-    "contributors": [
-        {
-            "name": "Aaron O'Mullan"
-        },
-        {
-            "name": "Samy Pessé"
-        }
-    ],
     "dependencies": {
         "bash-color": "0.0.4",
         "cheerio": "0.20.0",
@@ -92,48 +83,40 @@
         "tmp": "0.0.28",
         "urijs": "1.18.0"
     },
-    "description": "Library and cmd utility to generate GitBooks",
     "devDependencies": {
         "eslint": "2.10.2",
         "expect": "^1.20.1",
         "mocha": "^2.4.5"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "2b5157d358777a95f916499f385d859ccea0bf25",
-        "tarball": "https://registry.npmjs.org/gitbook/-/gitbook-3.2.2.tgz"
+    "scripts": {
+        "lint": "eslint .",
+        "test": "./node_modules/.bin/mocha ./testing/setup.js \"./lib/**/*/__tests__/*.js\" --bail --reporter=list --timeout=10000"
     },
-    "gitHead": "ad425b9772c73df297cfe9c024e7dd99e9bc4c75",
-    "homepage": "https://www.gitbook.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GitbookIO/gitbook.git"
+    },
+    "bin": {
+        "gitbook": "./bin/gitbook.js"
+    },
     "keywords": [
         "git",
         "book",
         "gitbook"
     ],
+    "author": "FriendCode Inc. <contact@gitbook.com>",
     "license": "Apache-2.0",
-    "main": "lib/index.js",
-    "maintainers": [
+    "bugs": {
+        "url": "https://github.com/GitbookIO/gitbook/issues"
+    },
+    "contributors": [
         {
-            "name": "aarono"
+            "name": "Aaron O'Mullan"
         },
         {
-            "name": "jpreynat"
-        },
-        {
-            "name": "samypesse"
+            "name": "Samy Pessé"
         }
-    ],
-    "name": "gitbook",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/GitbookIO/gitbook.git"
-    },
-    "scripts": {
-        "lint": "eslint .",
-        "test": "mocha ./testing/setup.js \"./lib/**/*/__tests__/*.js\" --bail --reporter=list --timeout=10000"
-    },
-    "version": "3.2.2"
+    ]
 }
 ```
 
