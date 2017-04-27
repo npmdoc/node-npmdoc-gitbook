@@ -146,15 +146,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git">
-            function <span class="apidocSignatureSpan">gitbook.</span>git
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.gitbook.glossaryEntry">
             function <span class="apidocSignatureSpan">gitbook.</span>glossaryEntry
             <span class="apidocSignatureSpan">(values)</span>
@@ -257,6 +248,15 @@
             <a class="apidocElementLiA" href="#apidoc.element.gitbook.server">
             function <span class="apidocSignatureSpan">gitbook.</span>server
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.state">
+            function <span class="apidocSignatureSpan">gitbook.</span>state
+            <span class="apidocSignatureSpan">(values)</span>
             </a>
 
         </li>
@@ -476,12 +476,6 @@
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gitbook.</span>git.prototype</span>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gitbook.</span>glossaryEntry.prototype</span>
 
         </li>
@@ -495,6 +489,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gitbook.</span>images</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gitbook.</span>index</span>
 
         </li>
 
@@ -579,6 +579,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gitbook.</span>server.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gitbook.</span>state.prototype</span>
 
         </li>
 
@@ -2892,86 +2898,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.gitbook.git">module gitbook.git</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.git">
-            function <span class="apidocSignatureSpan">gitbook.</span>git
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.isUrl">
-            function <span class="apidocSignatureSpan">gitbook.git.</span>isUrl
-            <span class="apidocSignatureSpan">(giturl)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.parseUrl">
-            function <span class="apidocSignatureSpan">gitbook.git.</span>parseUrl
-            <span class="apidocSignatureSpan">(giturl)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.gitbook.git.prototype">module gitbook.git.prototype</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.prototype.allocateDir">
-            function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>allocateDir
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.prototype.clone">
-            function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>clone
-            <span class="apidocSignatureSpan">(host, ref)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.prototype.repoID">
-            function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>repoID
-            <span class="apidocSignatureSpan">(host, ref)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.prototype.resolve">
-            function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>resolve
-            <span class="apidocSignatureSpan">(giturl)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gitbook.git.prototype.resolveRoot">
-            function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>resolveRoot
-            <span class="apidocSignatureSpan">(filepath)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.gitbook.glossaryEntry">module gitbook.glossaryEntry</a><ol>
 
         <li>
@@ -3136,6 +3062,46 @@
             <a class="apidocElementLiA" href="#apidoc.element.gitbook.images.convertSVGToPNG">
             function <span class="apidocSignatureSpan">gitbook.images.</span>convertSVGToPNG
             <span class="apidocSignatureSpan">(source, dest, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gitbook.index">module gitbook.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.index.decodeGlobal">
+            function <span class="apidocSignatureSpan">gitbook.index.</span>decodeGlobal
+            <span class="apidocSignatureSpan">(output, result)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.index.decodePage">
+            function <span class="apidocSignatureSpan">gitbook.index.</span>decodePage
+            <span class="apidocSignatureSpan">(output, page, result)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.index.encodeGlobal">
+            function <span class="apidocSignatureSpan">gitbook.index.</span>encodeGlobal
+            <span class="apidocSignatureSpan">(output)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.index.encodePage">
+            function <span class="apidocSignatureSpan">gitbook.index.</span>encodePage
+            <span class="apidocSignatureSpan">(output, page)</span>
             </a>
 
         </li>
@@ -4989,6 +4955,50 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.gitbook.state">module gitbook.state</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.state.state">
+            function <span class="apidocSignatureSpan">gitbook.</span>state
+            <span class="apidocSignatureSpan">(values)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gitbook.state.prototype">module gitbook.state.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.state.prototype.constructor">
+            function <span class="apidocSignatureSpan">gitbook.state.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(values)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.state.prototype.getI18n">
+            function <span class="apidocSignatureSpan">gitbook.state.prototype.</span>getI18n
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gitbook.state.prototype.getResources">
+            function <span class="apidocSignatureSpan">gitbook.state.prototype.</span>getResources
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.gitbook.summaryArticle">module gitbook.summaryArticle</a><ol>
 
         <li>
@@ -6042,22 +6052,6 @@
 
 
     <h2>
-        <a href="#apidoc.element.gitbook.git" id="apidoc.element.gitbook.git">
-        function <span class="apidocSignatureSpan">gitbook.</span>git
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Git() {
-    this.tmpDir;
-    this.cloned = {};
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
         <a href="#apidoc.element.gitbook.glossaryEntry" id="apidoc.element.gitbook.glossaryEntry">
         function <span class="apidocSignatureSpan">gitbook.</span>glossaryEntry
         <span class="apidocSignatureSpan">(values)</span>
@@ -6469,6 +6463,36 @@
 
 
     <h2>
+        <a href="#apidoc.element.gitbook.state" id="apidoc.element.gitbook.state">
+        function <span class="apidocSignatureSpan">gitbook.</span>state
+        <span class="apidocSignatureSpan">(values)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Record(values) {
+  if (values instanceof RecordType) {
+    return values;
+  }
+  if (!(this instanceof RecordType)) {
+    return new RecordType(values);
+  }
+  if (!hasInitialized) {
+    hasInitialized = true;
+    var keys = Object.keys(defaultValues);
+    setProps(RecordTypePrototype, keys);
+    RecordTypePrototype.size = keys.length;
+    RecordTypePrototype._name = name;
+    RecordTypePrototype._keys = keys;
+    RecordTypePrototype._defaultValues = defaultValues;
+  }
+  this._map = Map(values);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.gitbook.summaryArticle" id="apidoc.element.gitbook.summaryArticle">
         function <span class="apidocSignatureSpan">gitbook.</span>summaryArticle
         <span class="apidocSignatureSpan">(values)</span>
@@ -6662,6 +6686,8 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
 
 
 
@@ -7112,7 +7138,22 @@ Resolve a page by it path
     // Choose the first non null
     return exts.find(function (e) { return e !== null; });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+    Infer the default path for a Readme.
+    @param {Boolean} [absolute=false] False for a path relative to
+        this book's content root
+    @return {String}
+*/
+Book.prototype.getDefaultReadmePath = function(absolute) {
+    var defaultPath = 'README'+this.<span class="apidocCodeKeywordSpan">getDefaultExt</span>();
+    if (absolute) {
+        return path.join(this.getContentRoot(), defaultPath);
+    } else {
+        return defaultPath;
+    }
+};
+...</pre></li>
     </ul>
 
 
@@ -7188,21 +7229,20 @@ Resolve a page by it path
     return this.get('fs');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+
 /**
-Parse configuration from "book.json" or "book.js"
+Return FS instance to access the content
 
-@param {Book} book
-@return {Promise&lt;Book&gt;}
+@return {FS}
 */
-function parseConfig(book) {
-var fs = book.<span class="apidocCodeKeywordSpan">getFS</span>();
-var config = book.getConfig();
+Book.prototype.getContentFS = function() {
+var fs = this.<span class="apidocCodeKeywordSpan">getFS</span>();
+var config = this.getConfig();
+var rootFolder = config.getValue('root');
 
-return Promise.some(CONFIG_FILES, function(filename) {
-    // Is this file ignored?
-    if (book.isFileIgnored(filename)) {
-        return;
-    }
+if (rootFolder) {
+    return FS.reduceScope(fs, rootFolder);
+}
 ...</pre></li>
     </ul>
 
@@ -7251,20 +7291,19 @@ if (readmeFile.exists()) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 /**
-Test if a file is ignored by these rules
+Check if a file is ignore (should not being parsed, etc)
 
-@param {String} filePath
-@return {Boolean}
+@param {String} ref
+@return {Page|undefined}
 */
-Ignore.prototype.isFileIgnored = function(filename) {
+Book.prototype.isFileIgnored = function(filename) {
 var ignore = this.<span class="apidocCodeKeywordSpan">getIgnore</span>();
-return ignore.filter([filename]).length == 0;
-};
+var language = this.getLanguage();
 
-/**
-Add rules
-
-@param {String}
+// Ignore is always relative to the root of the main book
+if (language) {
+    filename = path.join(language, filename);
+}
 ...</pre></li>
     </ul>
 
@@ -7561,21 +7600,21 @@ return Promise.forEach(articles, function(article) {
     return ignore.isFileIgnored(filename);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-*/
-function parseConfig(book) {
-    var fs = book.getFS();
-    var config = book.getConfig();
+var language = this.getLanguage();
 
-    return Promise.some(CONFIG_FILES, function(filename) {
-// Is this file ignored?
-if (book.<span class="apidocCodeKeywordSpan">isFileIgnored</span>(filename)) {
-    return;
+// Ignore is always relative to the root of the main book
+if (language) {
+    filename = path.join(language, filename);
 }
 
-// Try loading it
-return fs.loadAsObject(filename)
-.then(function(cfg) {
-    return fs.statFile(filename)
+return ignore.<span class="apidocCodeKeywordSpan">isFileIgnored</span>(filename);
+};
+
+/**
+Check if a content file is ignore (should not being parsed, etc)
+
+@param {String} ref
+@return {Page|undefined}
 ...</pre></li>
     </ul>
 
@@ -7873,7 +7912,22 @@ module.exports = parseSummary;
         values: Immutable.fromJS(values)
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+var Immutable = require('immutable');
+var Config = require('../config');
+
+describe('Config', function() {
+var config = Config.<span class="apidocCodeKeywordSpan">createWithValues</span>({
+    hello: {
+        world: 1,
+        test: 'Hello',
+        isFalse: false
+    }
+});
+...</pre></li>
     </ul>
 
 
@@ -7889,7 +7943,23 @@ module.exports = parseSummary;
     if (is.string(keyPath)) keyPath = keyPath.split('.');
     return keyPath;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Return a configuration value by its key path
+ * @param {String} key
+ * @return {Mixed}
+ */
+Config.prototype.getValue = function(keyPath, def) {
+    var values = this.getValues();
+    keyPath = Config.<span class="apidocCodeKeywordSpan">keyToKeyPath</span>(keyPath);
+
+    if (!values.hasIn(keyPath)) {
+        return Immutable.fromJS(def);
+    }
+
+    return values.getIn(keyPath);
+};
+...</pre></li>
     </ul>
 
 
@@ -7978,20 +8048,20 @@ return Promise.forEach(articles, function(article) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-@param {Book}
-@return {Promise&lt;Number&gt;}
-*/
-function installPlugins(book) {
-var logger = book.getLogger();
-var config = book.getConfig();
-var plugins = config.<span class="apidocCodeKeywordSpan">getPluginDependencies</span>();
+/**
+ * Return a plugin dependency by its name
+ * @param {String} name
+ * @return {PluginDependency}
+ */
+Config.prototype.getPluginDependency = function(name) {
+    var plugins = this.<span class="apidocCodeKeywordSpan">getPluginDependencies</span>();
 
-// Remove default plugins
-// (only if version is same as installed)
-plugins = plugins.filterNot(function(plugin) {
-    var dependency = DEFAULT_PLUGINS.find(function(dep) {
-        return dep.getName() === plugin.getName();
+    return plugins.find(function(dep) {
+        return dep.getName() === name;
     });
+};
+
+/**
 ...</pre></li>
     </ul>
 
@@ -8162,7 +8232,19 @@ module.exports = parseConfig;
 
     return this.setValue('plugins', plugins);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return togglePlugin(config, pluginName, true);
+    }
+
+    var deps = config.getPluginDependencies();
+    var dep = PluginDependency.create(pluginName, version);
+
+    deps = deps.push(dep);
+    return config.<span class="apidocCodeKeywordSpan">setPluginDependencies</span>(deps);
+}
+
+module.exports = addPlugin;
+...</pre></li>
     </ul>
 
 
@@ -8184,7 +8266,22 @@ module.exports = parseConfig;
 
     return this.set('values', values);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+@return {Book}
+*/
+Book.createFromParent = function createFromParent(parent, language) {
+var ignore = parent.getIgnore();
+var config = parent.getConfig();
+
+// Set language in configuration
+config = config.<span class="apidocCodeKeywordSpan">setValue</span>('language', language);
+
+return new Book({
+    // Inherits config. logegr and list of ignored files
+    logger: parent.getLogger(),
+    config: config,
+    ignore: ignore,
+...</pre></li>
     </ul>
 
 
@@ -8199,7 +8296,23 @@ module.exports = parseConfig;
     <li>description and source-code<pre class="apidocCodePre">toReducedVersion = function () {
     return reducedObject(configDefault, this.getValues());
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+/**
+* Render config as text
+* @return {Promise&lt;String&gt;}
+*/
+Config.prototype.toText = function() {
+   return JSON.stringify(this.<span class="apidocCodeKeywordSpan">toReducedVersion</span>().toJS(), null, 4);
+};
+
+/**
+* Change the file for the configuration
+* @param {File} file
+* @return {Config}
+*/
+...</pre></li>
     </ul>
 
 
@@ -8520,7 +8633,23 @@ return Parse.parseBook(book)
     <li>description and source-code<pre class="apidocCodePre">function reduceScope(fs, scope) {
     return fs.set('root', path.join(fs.getRoot(), scope));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+Book.prototype.getContentFS = function() {
+var fs = this.getFS();
+var config = this.getConfig();
+var rootFolder = config.getValue('root');
+
+if (rootFolder) {
+    return FS.<span class="apidocCodeKeywordSpan">reduceScope</span>(fs, rootFolder);
+}
+
+return fs;
+};
+
+/**
+Return root of the book
+...</pre></li>
     </ul>
 
 
@@ -8678,7 +8807,23 @@ module.exports = encodeConfig;
 
     return PathUtil.isInRoot(rootPath, filename);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+FS.prototype.resolve = function() {
+var rootPath = this.getRoot();
+var args = Array.prototype.slice.call(arguments);
+var filename = path.join.apply(path, [rootPath].concat(args));
+filename = path.normalize(filename);
+
+if (!this.<span class="apidocCodeKeywordSpan">isInScope</span>(filename)) {
+    throw error.FileOutOfScopeError({
+        filename: filename,
+        root: this.root
+    });
+}
+
+return filename;
+...</pre></li>
     </ul>
 
 
@@ -8716,18 +8861,20 @@ module.exports = encodeConfig;
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-            book.isContentFileIgnored(file) ||
-            pages.has(file)
-        );
-    }
+                return out;
+            }
 
-    return timing.measure(
-        'parse.listAssets',
-        fs.<span class="apidocCodeKeywordSpan">listAllFiles</span>('.', filterFile)
-    );
-}
+            if (!isDirectory) {
+                return out.push(newDirName);
+            }
 
-module.exports = listAssets;
+            return that.<span class="apidocCodeKeywordSpan">listAllFiles</span>(newDirName, filterFn)
+            .then(function(inner) {
+                return out.concat(inner);
+            });
+        }, Immutable.List());
+    });
+};
 ...</pre></li>
     </ul>
 
@@ -8746,7 +8893,22 @@ module.exports = listAssets;
         return files.filterNot(pathIsFolder);
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    Return the found filename
+
+    @param {String} dirname
+    @param {String} filename
+    @return {Promise&lt;String&gt;}
+*/
+FS.prototype.findFile = function(dirname, filename) {
+    return this.<span class="apidocCodeKeywordSpan">listFiles</span>(dirname)
+    .then(function(files) {
+        return files.find(function(file) {
+            return (file.toLowerCase() == filename.toLowerCase());
+        });
+    });
+};
+...</pre></li>
     </ul>
 
 
@@ -8927,7 +9089,23 @@ Resolve a file from the book root
         return Immutable.List(files);
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+List only files in a diretcory
+Directories ends with '/'
+
+@param {String} dirname
+@return {Promise&lt;List&lt;String&gt;&gt;}
+*/
+FS.prototype.listFiles = function(dirname) {
+return this.<span class="apidocCodeKeywordSpan">readDir</span>(dirname)
+.then(function(files) {
+    return files.filterNot(pathIsFolder);
+});
+};
+
+/**
+List all files in a directory
+...</pre></li>
     </ul>
 
 
@@ -8955,21 +9133,22 @@ Resolve a file from the book root
     return filename;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        /**
-Resolve a file from the book root
+The `Book` class is the central point of GitBook, it centralize all access read methods. This class is defined in [book.js](https
+://github.com/GitbookIO/gitbook/blob/master/lib/book.js).
 
-@param {String} fileName
-@return {String}
-        */
-        resolve: function(fileName) {
-return path.<span class="apidocCodeKeywordSpan">resolve</span>(book.getContentRoot(), fileName);
-        },
+```js
+// Read configuration from book.json
+var value = book.config.get('title', 'Default Value');
 
-        /**
-Resolve a page by it path
+// Resolve a filename to an absolute path
+var filepath = book.<span class="apidocCodeKeywordSpan">resolve</span>('README.md');
 
-@param {String} filePath
-@return {String}
+// Render an inline markup string
+book.renderInline('markdown', 'This is **Markdown**')
+    .then(function(str) { ... })
+
+// Render a markup string (block mode)
+book.renderBlock('markdown', '* This is **Markdown**')
 ...</pre></li>
     </ul>
 
@@ -9140,7 +9319,22 @@ module.exports = findParsableFile;
         mtime: stat.mtime
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+.then(function() {
+    var filepath = that.resolve(filename);
+    var stat = that.get('fsStatFile');
+
+    return stat(filepath);
+})
+.then(function(stat) {
+    return File.<span class="apidocCodeKeywordSpan">createFromStat</span>(filename, stat);
+});
+};
+
+/**
+List files/directories in a directory.
+Directories ends with '/'
+...</pre></li>
     </ul>
 
 
@@ -9253,7 +9447,23 @@ hasFile: function(fileName, content) {
     <li>description and source-code<pre class="apidocCodePre">getExtension = function () {
     return path.extname(this.getPath()).toLowerCase();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+Return parser for this file
+
+@return {Parser}
+*/
+File.prototype.getParser = function() {
+return parsers.getByExt(this.<span class="apidocCodeKeywordSpan">getExtension</span>());
+};
+
+/**
+Create a file from stats informations
+
+@param {String} filepath
+@param {Object|fs.Stats} stat
+...</pre></li>
     </ul>
 
 
@@ -9298,21 +9508,20 @@ module.exports = encodeFileToJson;
     return parsers.getByExt(this.getExtension());
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+    this.getGlossary()
+];
 
-    return timing.measure(
-        'page.generate',
-        Promise(page)
-        .then(function(resultPage) {
-var file = resultPage.getFile();
-var filePath = file.getPath();
-var parser = file.<span class="apidocCodeKeywordSpan">getParser</span>();
-var context = JSONUtils.encodeOutputWithPage(output, resultPage);
-
-if (!parser) {
-    return Promise.reject(error.FileNotParsableError({
-        filename: filePath
-    }));
-}
+// List their extensions
+var exts = clues.map(function (clue) {
+    var file = clue.getFile();
+    if (file.exists()) {
+        return file.<span class="apidocCodeKeywordSpan">getParser</span>().getExtensions().first();
+    } else {
+        return null;
+    }
+});
+// Adds the general default extension
+exts.push('.md');
 ...</pre></li>
     </ul>
 
@@ -9439,7 +9648,23 @@ deprecate.field(output, 'page.progress', result, 'progress', function() {
     entries = entries.set(id, entry);
     return glossary.set('entries', entries);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+Glossary.addEntryByName = function addEntryByName(glossary, name, description) {
+var entry = new GlossaryEntry({
+    name: name,
+    description: description
+});
+
+return Glossary.<span class="apidocCodeKeywordSpan">addEntry</span>(glossary, entry);
+};
+
+/**
+Create a glossary from a list of entries
+
+@param {String} filename
+@param {Array|List} entries
+...</pre></li>
     </ul>
 
 
@@ -9883,7 +10108,23 @@ return fs.statFile(filePath)
     <li>description and source-code<pre class="apidocCodePre">getAttributes = function () {
     return this.get('attributes');
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+@param {Page} page
+@param {Summary} summary
+@return {Object}
+*/
+function encodePage(page, summary) {
+var file = page.getFile();
+var attributes = page.<span class="apidocCodeKeywordSpan">getAttributes</span>();
+var article = summary.getByPath(file.getPath());
+
+var result = attributes.toJS();
+
+if (article) {
+    result.title = article.getTitle();
+    result.level = article.getLevel();
+...</pre></li>
     </ul>
 
 
@@ -9928,7 +10169,21 @@ if (!result) {
     <li>description and source-code<pre class="apidocCodePre">getDir = function () {
     return this.get('dir');
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        var prevArticle = summary.getPrevArticle(article);
+        if (prevArticle) {
+            result.previous = encodeSummaryArticle(prevArticle);
+        }
+    }
+
+    result.content = page.getContent();
+    result.dir = page.<span class="apidocCodeKeywordSpan">getDir</span>();
+
+    return result;
+}
+
+module.exports = encodePage;
+...</pre></li>
     </ul>
 
 
@@ -10687,7 +10942,23 @@ return fs.readAsString(filepath)
         enabled: enabled
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param {Array}
+ * @return {List&lt;PluginDependency&gt;}
+ */
+PluginDependency.listFromArray = function(arr) {
+return Immutable.List(arr)
+    .map(function(entry) {
+        if (is.string(entry)) {
+            return PluginDependency.<span class="apidocCodeKeywordSpan">createFromString</span>(entry);
+        } else {
+            return PluginDependency({
+                name: entry.get('name'),
+                version: entry.get('version')
+            });
+        }
+    })
+...</pre></li>
     </ul>
 
 
@@ -10715,7 +10986,23 @@ return fs.readAsString(filepath)
             return Boolean(dep.getName());
         });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+Config.prototype.getPluginDependencies = function() {
+   var plugins = this.getValue('plugins');
+
+   if (is.string(plugins)) {
+       return PluginDependency.listFromString(plugins);
+   } else {
+       return PluginDependency.<span class="apidocCodeKeywordSpan">listFromArray</span>(plugins);
+   }
+};
+
+/**
+* Return a plugin dependency by its name
+* @param {String} name
+* @return {PluginDependency}
+...</pre></li>
     </ul>
 
 
@@ -10731,7 +11018,23 @@ return fs.readAsString(filepath)
     var parts = s.split(',');
     return PluginDependency.listFromArray(parts);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Return a list of plugin dependencies
+* @return {List&lt;PluginDependency&gt;}
+*/
+Config.prototype.getPluginDependencies = function() {
+   var plugins = this.getValue('plugins');
+
+   if (is.string(plugins)) {
+       return PluginDependency.<span class="apidocCodeKeywordSpan">listFromString</span>(plugins);
+   } else {
+       return PluginDependency.listFromArray(plugins);
+   }
+};
+
+/**
+* Return a plugin dependency by its name
+...</pre></li>
     </ul>
 
 
@@ -10761,7 +11064,23 @@ return fs.readAsString(filepath)
         })
         .toJS();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+* Update the list of plugins dependencies
+* @param {List&lt;PluginDependency&gt;}
+* @return {Config}
+*/
+Config.prototype.setPluginDependencies = function(deps) {
+   var plugins = PluginDependency.<span class="apidocCodeKeywordSpan">listToArray</span>(deps);
+
+   return this.setValue('plugins', plugins);
+};
+
+
+/**
+* Update values for an existing configuration
+...</pre></li>
     </ul>
 
 
@@ -10907,20 +11226,21 @@ return Promise.nfcall(npmi, {
     return this.get('version');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * Create a plugin from a dependency
- * @param {PluginDependency}
- * @return {Plugin}
- */
-Plugin.createFromDep = function(dep) {
-    return new Plugin({
-        name: dep.getName(),
-        version: dep.<span class="apidocCodeKeywordSpan">getVersion</span>()
-    });
 };
 
-Plugin.nameToNpmID = PluginDependency.nameToNpmID;
+/**
+* Is the plugin using a git dependency
+* @return {Boolean}
+*/
+PluginDependency.prototype.isGitDependency = function() {
+   return !semver.validRange(this.<span class="apidocCodeKeywordSpan">getVersion</span>());
+};
 
-module.exports = Plugin;
+/**
+* Create a plugin with a name and a plugin
+* @param {String}
+* @return {Plugin|undefined}
+*/
 ...</pre></li>
     </ul>
 
@@ -10937,20 +11257,21 @@ module.exports = Plugin;
     return this.get('enabled');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-plugins = plugins.filterNot(function(plugin) {
-    var dependency = DEFAULT_PLUGINS.find(function(dep) {
-        return dep.getName() === plugin.getName();
-    });
+/**
+* Toggle this plugin state
+* @param  {Boolean}
+* @return {PluginDependency}
+*/
+PluginDependency.prototype.toggle = function(state) {
+   if (is.undef(state)) {
+       state = !this.<span class="apidocCodeKeywordSpan">isEnabled</span>();
+   }
 
-    return (
-        // Disabled plugin
-        !plugin.<span class="apidocCodeKeywordSpan">isEnabled</span>() ||
+   return this.set('enabled', state);
+};
 
-        // Or default one installed in GitBook itself
-        (dependency &amp;&amp;
-        plugin.getVersion() === dependency.getVersion())
-    );
-});
+/**
+* Return NPM ID for the dependency
 ...</pre></li>
     </ul>
 
@@ -11001,7 +11322,23 @@ return initNPM()
 
     return this.set('enabled', state);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    // For default plugin, we should ensure it's listed first
+    if (isDefaultPlugin(pluginName) &amp;&amp; !hasPlugin(deps, pluginName)) {
+        deps = deps.push(PluginDependency.create(pluginName));
+    }
+
+    deps = deps.map(function(dep) {
+        if (dep.getName() === pluginName) {
+            return dep.<span class="apidocCodeKeywordSpan">toggle</span>(state);
+        }
+
+        return dep;
+    });
+
+    return config.setPluginDependencies(deps);
+}
+...</pre></li>
     </ul>
 
 
@@ -11339,7 +11676,23 @@ return Promise.forEach(articles, function(article) {
         return false;
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var result = attributes.toJS();
+
+    if (article) {
+result.title = article.getTitle();
+result.level = article.getLevel();
+result.depth = article.getDepth();
+
+var nextArticle = summary.<span class="apidocCodeKeywordSpan">getNextArticle</span>(article);
+if (nextArticle) {
+    result.next = encodeSummaryArticle(nextArticle);
+}
+
+var prevArticle = summary.getPrevArticle(article);
+if (prevArticle) {
+    result.previous = encodeSummaryArticle(prevArticle);
+...</pre></li>
     </ul>
 
 
@@ -11413,21 +11766,20 @@ if (installed) {
     return this.get('parts');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    Walk over summary and execute "fn" on each article
+    Encode a summary to JSON
 
-    @param {Summary} summary
-    @param {Function(article)}
-    @return {Promise}
+    @param {Summary}
+    @return {Object}
 */
-function walkSummary(summary, fn) {
+function encodeSummary(summary) {
+    var file = summary.getFile();
     var parts = summary.<span class="apidocCodeKeywordSpan">getParts</span>();
 
-    return Promise.forEach(parts, function(part) {
-        return walkArticles(part.getArticles(), fn);
-    });
+    return {
+        file: encodeFile(file),
+        parts: parts.map(encodeSummaryPart).toJS()
+    };
 }
-
-module.exports = walkSummary;
 ...</pre></li>
     </ul>
 
@@ -11455,7 +11807,23 @@ module.exports = walkSummary;
 
     return prev;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    result.depth = article.getDepth();
+
+    var nextArticle = summary.getNextArticle(article);
+    if (nextArticle) {
+        result.next = encodeSummaryArticle(nextArticle);
+    }
+
+    var prevArticle = summary.<span class="apidocCodeKeywordSpan">getPrevArticle</span>(article);
+    if (prevArticle) {
+        result.previous = encodeSummaryArticle(prevArticle);
+    }
+}
+
+result.content = page.getContent();
+result.dir = page.getDir();
+...</pre></li>
     </ul>
 
 
@@ -12119,7 +12487,23 @@ var child = childProcess.<span class="apidocCodeKeywordSpan">exec</span>(command
 
     return result.join(' ');
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    return getConvertOptions(output)
+    .then(function(options) {
+var cmd = [
+    'ebook-convert',
+    path.resolve(outputFolder, SUMMARY_FILE),
+    path.resolve(outputFolder, 'index.' + format),
+    command.<span class="apidocCodeKeywordSpan">optionsToShellArgs</span>(options)
+].join(' ');
+
+return command.exec(cmd)
+.progress(function(data) {
+    logger.debug(data);
+})
+.fail(function(err) {
+...</pre></li>
     </ul>
 
 
@@ -12215,21 +12599,21 @@ return command.<span class="apidocCodeKeywordSpan">spawn</span>('svgexport', [so
     return extend(new_cls, name, props);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- *      - absolute url ("/test.md")
- *      - git url ("")
- *
- * @param {String} rootFolder
- * @param {Function(filePath, source)} transformFn (optional)
- * @param {Logger} logger (optional)
- */
-var ConrefsLoader = nunjucks.Loader.<span class="apidocCodeKeywordSpan">extend</span>({
-async: true,
 
-init: function(rootFolder, transformFn, logger) {
-    this.rootFolder = rootFolder;
-    this.transformFn = transformFn;
-    this.logger = logger;
-    this.git = new Git();
+var is = require('is');
+var path = require('path');
+var fs = require('fs');
+var expect = require('expect');
+var cheerio = require('cheerio');
+
+expect.<span class="apidocCodeKeywordSpan">extend</span>({
+/**
+ * Check that a file is created in a directory:
+ * expect('myFolder').toHaveFile('hello.md');
+ */
+toHaveFile: function(fileName) {
+    var filePath = path.join(this.actual, fileName);
+    var exists = fs.existsSync(filePath);
 ...</pre></li>
     </ul>
 
@@ -12396,21 +12780,22 @@ module.exports = ConrefsLoader;
     return path.resolve(path.dirname(from), to);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        /**
-Resolve a file from the book root
+The `Book` class is the central point of GitBook, it centralize all access read methods. This class is defined in [book.js](https
+://github.com/GitbookIO/gitbook/blob/master/lib/book.js).
 
-@param {String} fileName
-@return {String}
-        */
-        resolve: function(fileName) {
-return path.<span class="apidocCodeKeywordSpan">resolve</span>(book.getContentRoot(), fileName);
-        },
+```js
+// Read configuration from book.json
+var value = book.config.get('title', 'Default Value');
 
-        /**
-Resolve a page by it path
+// Resolve a filename to an absolute path
+var filepath = book.<span class="apidocCodeKeywordSpan">resolve</span>('README.md');
 
-@param {String} filePath
-@return {String}
+// Render an inline markup string
+book.renderInline('markdown', 'This is **Markdown**')
+    .then(function(str) { ... })
+
+// Render a markup string (block mode)
+book.renderBlock('markdown', '* This is **Markdown**')
 ...</pre></li>
     </ul>
 
@@ -12759,7 +13144,23 @@ deprecate.field(output, 'this.navigation', result, 'navigation', function() {
     });
     return err;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        if (err.code == 127) {
+            throw error.RequireInstallError({
+                cmd: 'ebook-convert',
+                install: 'Install it from Calibre: https://calibre-ebook.com'
+            });
+        }
+
+        throw error.<span class="apidocCodeKeywordSpan">EbookError</span>(err);
+    });
+})
+.thenResolve(output);
+}
+
+/**
+Finish the generation, generates the SUMMARY.html
+...</pre></li>
     </ul>
 
 
@@ -12796,21 +13197,20 @@ deprecate.field(output, 'this.navigation', result, 'navigation', function() {
     return result;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-*/
-function parseReadme(book) {
-var logger = book.getLogger();
+function fsExists(filePath) {
+    return Boolean(getFile(filePath) !== null);
+}
 
-return parseStructureFile(book, 'readme')
-.spread(function(file, result) {
-    if (!file) {
-        throw new error.<span class="apidocCodeKeywordSpan">FileNotFoundError</span>({ filename: 'README' });
+function fsReadFile(filePath) {
+    var file = getFile(filePath);
+    if (!is.string(file)) {
+        throw error.<span class="apidocCodeKeywordSpan">FileNotFoundError</span>({
+            filename: filePath
+        });
     }
 
-    logger.debug.ln('readme found at', file.getPath());
-
-    var readme = Readme.create(file, result);
-    return book.set('readme', readme);
-});
+    return new Buffer(file, 'utf8');
+}
 ...</pre></li>
     </ul>
 
@@ -12848,20 +13248,20 @@ return parseStructureFile(book, 'readme')
     return result;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        .then(function(resultPage) {
-var file = resultPage.getFile();
-var filePath = file.getPath();
-var parser = file.getParser();
-var context = JSONUtils.encodeOutputWithPage(output, resultPage);
+Glossary.prototype.toText = function(parser) {
+    var file = this.getFile();
+    var entries = this.getEntries();
 
-if (!parser) {
-    return Promise.reject(error.<span class="apidocCodeKeywordSpan">FileNotParsableError</span>({
-        filename: filePath
-    }));
-}
+    parser = parser? parsers.getByExt(parser) : file.getParser();
 
-// Call hook "page:before"
-return callPageHook('page:before', output, resultPage)
+    if (!parser) {
+        throw error.<span class="apidocCodeKeywordSpan">FileNotParsableError</span>({
+            filename: file.getPath()
+        });
+    }
+
+    return parser.renderGlossary(entries.toJS());
+};
 ...</pre></li>
     </ul>
 
@@ -12899,21 +13299,21 @@ return callPageHook('page:before', output, resultPage)
     return result;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+FS.prototype.resolve = function() {
+    var rootPath = this.getRoot();
+    var args = Array.prototype.slice.call(arguments);
+    var filename = path.join.apply(path, [rootPath].concat(args));
+    filename = path.normalize(filename);
 
-            return current? path.join(current, p) : path.normalize(p);
-        }, '');
-
-    result = path.resolve(root, input);
-
-    if (!isInRoot(root, result)) {
-        throw new error.<span class="apidocCodeKeywordSpan">FileOutOfScopeError</span>({
-            filename: result,
-            root: root
+    if (!this.isInScope(filename)) {
+        throw error.<span class="apidocCodeKeywordSpan">FileOutOfScopeError</span>({
+            filename: filename,
+            root: this.root
         });
     }
 
-    return result;
-}
+    return filename;
+};
 ...</pre></li>
     </ul>
 
@@ -13421,7 +13821,23 @@ gitbook: {
     <li>description and source-code<pre class="apidocCodePre">function download(uri, dest) {
     return writeStream(dest, request(uri));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// We avoid generating twice the same PNG
+var hash = crc.crc32(src).toString(16);
+var fileName = hash + extension;
+var filePath = path.join(rootFolder, fileName);
+
+return fs.assertFile(filePath, function() {
+    return fs.<span class="apidocCodeKeywordSpan">download</span>(src, filePath);
+})
+.then(function() {
+    // Convert to relative
+    src = LocationUtils.relative(currentDirectory, fileName);
+
+    $img.replaceWith('&lt;img src="' + src + '" /&gt;');
+});
+...</pre></li>
     </ul>
 
 
@@ -13547,20 +13963,21 @@ hasFile: function(fileName, content) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+expect.extend({
+    /**
+     * Check that a file is created in a directory:
+     * expect('myFolder').toHaveFile('hello.md');
+     */
+    toHaveFile: function(fileName) {
+var filePath = path.join(this.actual, fileName);
+var exists = fs.<span class="apidocCodeKeywordSpan">existsSync</span>(filePath);
 
-        // Absolute template to resolve in root folder
-        var resultFolder = searchPaths.find(function(basePath) {
-            var p = path.resolve(basePath, to);
-
-            return (
-                p.indexOf(basePath) === 0
-                &amp;&amp; fs.<span class="apidocCodeKeywordSpan">existsSync</span>(p)
-            );
-        });
-        if (!resultFolder) return null;
-        return path.resolve(resultFolder, to);
-    }
-});
+expect.assert(
+    exists,
+    'expected %s to have file %s',
+    this.actual,
+    fileName
+);
 ...</pre></li>
     </ul>
 
@@ -13616,7 +14033,23 @@ return Parse.parseReadme(book)
 
     return undefined;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function getCoverPath(output) {
+var outputRoot = output.getRoot();
+var book = output.getBook();
+var config = book.getConfig();
+var coverName = config.getValue('cover', 'cover.jpg');
+
+// Resolve to absolute
+var cover = fs.<span class="apidocCodeKeywordSpan">pickFile</span>(outputRoot, coverName);
+if (cover) {
+    return cover;
+}
+
+// Multilingual? try parent folder
+if (book.isLanguageBook()) {
+    cover = fs.pickFile(path.join(outputRoot, '..'), coverName);
+...</pre></li>
     </ul>
 
 
@@ -13797,23 +14230,7 @@ return files
     return Promise.nfcall(tmp.dir, opts)
         .get(0);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-// Allocate a temporary folder for cloning repos in it
-Git.prototype.allocateDir = function() {
-    var that = this;
-
-    if (this.tmpDir) return Promise();
-
-    return fs.<span class="apidocCodeKeywordSpan">tmpDir</span>()
-    .then(function(dir) {
-        that.tmpDir = dir;
-    });
-};
-
-// Clone a git repository if non existant
-Git.prototype.clone = function(host, ref) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -13948,329 +14365,6 @@ return fs.<span class="apidocCodeKeywordSpan">tmpFile</span>({
     return d.promise;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.gitbook.git" id="apidoc.module.gitbook.git">module gitbook.git</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.git" id="apidoc.element.gitbook.git.git">
-        function <span class="apidocSignatureSpan">gitbook.</span>git
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Git() {
-    this.tmpDir;
-    this.cloned = {};
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.isUrl" id="apidoc.element.gitbook.git.isUrl">
-        function <span class="apidocSignatureSpan">gitbook.git.</span>isUrl
-        <span class="apidocSignatureSpan">(giturl)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">isUrl = function (giturl) {
-    return (giturl.indexOf(GIT_PREFIX) === 0);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    .thenResolve(repoPath);
-});
-};
-
-// Get file from a git repo
-Git.prototype.resolve = function(giturl) {
-// Path to a file in a git repo?
-if (!Git.<span class="apidocCodeKeywordSpan">isUrl</span>(giturl)) {
-    if (this.resolveRoot(giturl)) return Promise(giturl);
-    return Promise(null);
-}
-if (is.string(giturl)) giturl = Git.parseUrl(giturl);
-if (!giturl) return Promise(null);
-
-// Clone or get from cache
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.parseUrl" id="apidoc.element.gitbook.git.parseUrl">
-        function <span class="apidocSignatureSpan">gitbook.git.</span>parseUrl
-        <span class="apidocSignatureSpan">(giturl)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">parseUrl = function (giturl) {
-    var ref, uri, fileParts, filepath;
-
-    if (!Git.isUrl(giturl)) return null;
-    giturl = giturl.slice(GIT_PREFIX.length);
-
-    uri = new URI(giturl);
-    ref = uri.fragment() || null;
-    uri.fragment(null);
-
-    // Extract file inside the repo (after the .git)
-    fileParts = uri.path().split('.git');
-    filepath = fileParts.length &gt; 1? fileParts.slice(1).join('.git') : '';
-    if (filepath[0] == '/') {
-        filepath = filepath.slice(1);
-    }
-
-    // Recreate pathname without the real filename
-    uri.path(fileParts[0] + '.git');
-
-    return {
-        host: uri.toString(),
-        ref: ref,
-        filepath: filepath
-    };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-// Get file from a git repo
-Git.prototype.resolve = function(giturl) {
-// Path to a file in a git repo?
-if (!Git.isUrl(giturl)) {
-    if (this.resolveRoot(giturl)) return Promise(giturl);
-    return Promise(null);
-}
-if (is.string(giturl)) giturl = Git.<span class="apidocCodeKeywordSpan">parseUrl</span>(giturl);
-if (!giturl) return Promise(null);
-
-// Clone or get from cache
-return this.clone(giturl.host, giturl.ref)
-.then(function(repo) {
-    return path.resolve(repo, giturl.filepath);
-});
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.gitbook.git.prototype" id="apidoc.module.gitbook.git.prototype">module gitbook.git.prototype</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.prototype.allocateDir" id="apidoc.element.gitbook.git.prototype.allocateDir">
-        function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>allocateDir
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">allocateDir = function () {
-    var that = this;
-
-    if (this.tmpDir) return Promise();
-
-    return fs.tmpDir()
-    .then(function(dir) {
-        that.tmpDir = dir;
-    });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    });
-};
-
-// Clone a git repository if non existant
-Git.prototype.clone = function(host, ref) {
-    var that = this;
-
-    return this.<span class="apidocCodeKeywordSpan">allocateDir</span>()
-
-    // Return or clone the git repo
-    .then(function() {
-// Unique ID for repo/ref combinaison
-var repoId = that.repoID(host, ref);
-
-// Absolute path to the folder
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.prototype.clone" id="apidoc.element.gitbook.git.prototype.clone">
-        function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>clone
-        <span class="apidocSignatureSpan">(host, ref)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">clone = function (host, ref) {
-    var that = this;
-
-    return this.allocateDir()
-
-    // Return or clone the git repo
-    .then(function() {
-        // Unique ID for repo/ref combinaison
-        var repoId = that.repoID(host, ref);
-
-        // Absolute path to the folder
-        var repoPath = path.join(that.tmpDir, repoId);
-
-        if (that.cloned[repoId]) return repoPath;
-
-        // Clone repo
-        return command.exec('git clone '+host+' '+repoPath)
-
-        // Checkout reference if specified
-        .then(function() {
-            that.cloned[repoId] = true;
-
-            if (!ref) return;
-            return command.exec('git checkout '+ref, { cwd: repoPath });
-        })
-        .thenResolve(repoPath);
-    });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        if (this.resolveRoot(giturl)) return Promise(giturl);
-        return Promise(null);
-    }
-    if (is.string(giturl)) giturl = Git.parseUrl(giturl);
-    if (!giturl) return Promise(null);
-
-    // Clone or get from cache
-    return this.<span class="apidocCodeKeywordSpan">clone</span>(giturl.host, giturl.ref)
-    .then(function(repo) {
-        return path.resolve(repo, giturl.filepath);
-    });
-};
-
-// Return root of git repo from a filepath
-Git.prototype.resolveRoot = function(filepath) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.prototype.repoID" id="apidoc.element.gitbook.git.prototype.repoID">
-        function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>repoID
-        <span class="apidocSignatureSpan">(host, ref)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">repoID = function (host, ref) {
-    return crc.crc32(host+'#'+(ref || '')).toString(16);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    var that = this;
-
-    return this.allocateDir()
-
-    // Return or clone the git repo
-    .then(function() {
-// Unique ID for repo/ref combinaison
-var repoId = that.<span class="apidocCodeKeywordSpan">repoID</span>(host, ref);
-
-// Absolute path to the folder
-var repoPath = path.join(that.tmpDir, repoId);
-
-if (that.cloned[repoId]) return repoPath;
-
-// Clone repo
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.prototype.resolve" id="apidoc.element.gitbook.git.prototype.resolve">
-        function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>resolve
-        <span class="apidocSignatureSpan">(giturl)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">resolve = function (giturl) {
-    // Path to a file in a git repo?
-    if (!Git.isUrl(giturl)) {
-        if (this.resolveRoot(giturl)) return Promise(giturl);
-        return Promise(null);
-    }
-    if (is.string(giturl)) giturl = Git.parseUrl(giturl);
-    if (!giturl) return Promise(null);
-
-    // Clone or get from cache
-    return this.clone(giturl.host, giturl.ref)
-    .then(function(repo) {
-        return path.resolve(repo, giturl.filepath);
-    });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        /**
-Resolve a file from the book root
-
-@param {String} fileName
-@return {String}
-        */
-        resolve: function(fileName) {
-return path.<span class="apidocCodeKeywordSpan">resolve</span>(book.getContentRoot(), fileName);
-        },
-
-        /**
-Resolve a page by it path
-
-@param {String} filePath
-@return {String}
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.gitbook.git.prototype.resolveRoot" id="apidoc.element.gitbook.git.prototype.resolveRoot">
-        function <span class="apidocSignatureSpan">gitbook.git.prototype.</span>resolveRoot
-        <span class="apidocSignatureSpan">(filepath)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">resolveRoot = function (filepath) {
-    var relativeToGit, repoId;
-
-    // No git repo cloned, or file is not in a git repository
-    if (!this.tmpDir || !pathUtil.isInRoot(this.tmpDir, filepath)) return null;
-
-    // Extract first directory (is the repo id)
-    relativeToGit = path.relative(this.tmpDir, filepath);
-    repoId = relativeToGit.split(path.sep)[0];
-    if (!repoId) {
-        return;
-    }
-
-    // Return an absolute file
-    return path.resolve(this.tmpDir, repoId);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        var href = LocationUtils.toAbsolute(to, path.dirname(fromRelative), '');
-
-        // Return absolute path
-        return PathUtils.resolveInRoot(this.rootFolder, href);
-    }
-
-    // If origin is in a git repository, we resolve file in the git repository
-    var gitRoot = this.git.<span class="apidocCodeKeywordSpan">resolveRoot</span>(from);
-    if (gitRoot) {
-        return PathUtils.resolveInRoot(gitRoot, to);
-    }
-
-    // If origin is not in the book (include from a git content ref)
-    return path.resolve(path.dirname(from), to);
-},
-...</pre></li>
     </ul>
 
 
@@ -14584,20 +14678,19 @@ module.exports = Ignore;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 /**
-Test if a file is ignored by these rules
+Check if a file is ignore (should not being parsed, etc)
 
-@param {String} filePath
-@return {Boolean}
+@param {String} ref
+@return {Page|undefined}
 */
-Ignore.prototype.isFileIgnored = function(filename) {
+Book.prototype.isFileIgnored = function(filename) {
 var ignore = this.<span class="apidocCodeKeywordSpan">getIgnore</span>();
-return ignore.filter([filename]).length == 0;
-};
+var language = this.getLanguage();
 
-/**
-Add rules
-
-@param {String}
+// Ignore is always relative to the root of the main book
+if (language) {
+    filename = path.join(language, filename);
+}
 ...</pre></li>
     </ul>
 
@@ -14615,21 +14708,21 @@ Add rules
     return ignore.filter([filename]).length == 0;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-*/
-function parseConfig(book) {
-    var fs = book.getFS();
-    var config = book.getConfig();
+var language = this.getLanguage();
 
-    return Promise.some(CONFIG_FILES, function(filename) {
-// Is this file ignored?
-if (book.<span class="apidocCodeKeywordSpan">isFileIgnored</span>(filename)) {
-    return;
+// Ignore is always relative to the root of the main book
+if (language) {
+    filename = path.join(language, filename);
 }
 
-// Try loading it
-return fs.loadAsObject(filename)
-.then(function(cfg) {
-    return fs.statFile(filename)
+return ignore.<span class="apidocCodeKeywordSpan">isFileIgnored</span>(filename);
+};
+
+/**
+Check if a content file is ignore (should not being parsed, etc)
+
+@param {String} ref
+@return {Page|undefined}
 ...</pre></li>
     </ul>
 
@@ -14668,7 +14761,23 @@ return fs.loadAsObject(filename)
         throw new Error('Error converting '+source+' into '+dest);
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        var hash = crc.crc32(src).toString(16);
+        var fileName = hash + '.png';
+
+        // Result file path
+        var filePath = path.join(rootFolder, fileName);
+
+        return fs.assertFile(filePath, function() {
+return imagesUtil.<span class="apidocCodeKeywordSpan">convertInlinePNG</span>(src, filePath);
+        })
+        .then(function() {
+// Convert filename to a relative filename
+fileName = LocationUtils.relative(currentDirectory, fileName);
+
+// Replace src
+$img.attr('src', fileName);
+...</pre></li>
     </ul>
 
 
@@ -14724,6 +14833,342 @@ return fs.loadAsObject(filename)
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gitbook.index" id="apidoc.module.gitbook.index">module gitbook.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.index.decodeGlobal" id="apidoc.element.gitbook.index.decodeGlobal">
+        function <span class="apidocSignatureSpan">gitbook.index.</span>decodeGlobal
+        <span class="apidocSignatureSpan">(output, result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function decodeGlobal(output, result) {
+    var book = output.getBook();
+    var config = book.getConfig();
+
+    // Update config
+    config = decodeConfig(config, result.config);
+    book = book.set('config', config);
+
+    return output.set('book', book);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+                return hook.call(context, prev);
+            }, arg);
+        })
+
+        // Handle final result
+        .then(function(result) {
+            output = Api.<span class="apidocCodeKeywordSpan">decodeGlobal</span>(output, context);
+            return handleResult(output, result);
+        })
+    );
+}
+
+module.exports = callHook;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.index.decodePage" id="apidoc.element.gitbook.index.decodePage">
+        function <span class="apidocSignatureSpan">gitbook.index.</span>decodePage
+        <span class="apidocSignatureSpan">(output, page, result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function decodePage(output, page, result) {
+    var originalContent = page.getContent();
+
+    // No returned value
+    // Existing content will be used
+    if (!result) {
+        return page;
+    }
+
+    deprecate.disable('page.sections');
+
+    // GitBook 3
+    // Use returned page.content if different from original content
+    if (result.content != originalContent) {
+        page = page.set('content', result.content);
+    }
+
+    // GitBook 2 compatibility
+    // Finally, use page.sections
+    else if (result.sections) {
+        page = page.set('content',
+            result.sections.map(function(section) {
+                return section.content;
+            }).join('\n')
+        );
+    }
+
+    deprecate.enable('page.sections');
+
+    return page;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        name,
+
+        function(out) {
+            return Api.encodePage(out, page);
+        },
+
+        function(out, result) {
+            return Api.<span class="apidocCodeKeywordSpan">decodePage</span>(out, page, result);
+        },
+
+        output
+    );
+}
+
+module.exports = callPageHook;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.index.encodeGlobal" id="apidoc.element.gitbook.index.encodeGlobal">
+        function <span class="apidocSignatureSpan">gitbook.index.</span>encodeGlobal
+        <span class="apidocSignatureSpan">(output)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function encodeGlobal(output) {
+    var book = output.getBook();
+    var bookFS = book.getContentFS();
+    var logger = output.getLogger();
+    var outputFolder = output.getRoot();
+    var plugins = output.getPlugins();
+    var blocks = Plugins.listBlocks(plugins);
+
+    var result = {
+        log: logger,
+        config: encodeConfig(output, book.getConfig()),
+        summary: encodeSummary(output, book.getSummary()),
+
+<span class="apidocCodeCommentSpan">        /**
+            Check if the book is a multilingual book
+
+            @return {Boolean}
+        */
+</span>        isMultilingual: function() {
+            return book.isMultilingual();
+        },
+
+        /**
+            Check if the book is a language book for a multilingual book
+
+            @return {Boolean}
+        */
+        isLanguageBook: function() {
+            return book.isLanguageBook();
+        },
+
+        /**
+            Read a file from the book
+
+            @param {String} fileName
+            @return {Promise&lt;Buffer&gt;}
+        */
+        readFile: function(fileName) {
+            return bookFS.read(fileName);
+        },
+
+        /**
+            Read a file from the book as a string
+
+            @param {String} fileName
+            @return {Promise&lt;String&gt;}
+        */
+        readFileAsString: function(fileName) {
+            return bookFS.readAsString(fileName);
+        },
+
+        /**
+            Resolve a file from the book root
+
+            @param {String} fileName
+            @return {String}
+        */
+        resolve: function(fileName) {
+            return path.resolve(book.getContentRoot(), fileName);
+        },
+
+        /**
+            Resolve a page by it path
+
+            @param {String} filePath
+            @return {String}
+        */
+        getPageByPath: function(filePath) {
+            var page = output.getPage(filePath);
+            if (!page) return undefined;
+
+            return encodePage(output, page);
+        },
+
+        /**
+            Render a block of text (markdown/asciidoc)
+
+            @param {String} type
+            @param {String} text
+            @return {Promise&lt;String&gt;}
+        */
+        renderBlock: function(type, text) {
+            var parser = parsers.get(type);
+
+            return parser.parsePage(text)
+                .get('content');
+        },
+
+        /**
+            Render an inline text (markdown/asciidoc)
+
+            @param {String} type
+            @param {String} text
+            @return {Promise&lt;String&gt;}
+        */
+        renderInline: function(type, text) {
+            var parser = parsers.get(type);
+
+            return parser.parseInline(text)
+                .get('content');
+        },
+
+        template: {
+            /**
+                Apply a templating block and returns its result
+
+                @param {String} name
+                @param {Object} blockData
+                @return {Promise|Object}
+            */
+            applyBlock: function(name, blockData) {
+                var block = blocks.get(name) || defaultBlocks.get(name);
+                return Promise(block.applyBlock(blockData, result));
+            }
+        },
+
+        output: {
+            /**
+                Name of the generator being used
+                {String}
+            */
+            name: output.getGenerator(),
+
+            /**
+                Return absolute path to the root folder of output
+                @return {String}
+            */
+            root: function() {
+                return outputFolder;
+            },
+
+            /**
+                Resolve a file from the output root
+
+                @param {String} fileName
+                @return {String}
+            */
+            resolve: function(fileName) {
+                return path.resolve(outputFolder, fileName);
+            },
+
+            /**
+                Convert a filepath into an url
+                @return {String}
+            */
+            toURL: function(filePath) {
+                return fileToURL(output, filePath);
+            },
+
+            /**
+                Check that a file exists.
+
+                @param {String} fileName
+                @return {Promise} ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var logger = output.getLogger();
+    var plugins = output.getPlugins();
+
+    logger.debug.ln('calling hook "' + name + '"');
+
+    // Create the JS context for plugins
+    var context = Api.<span class="apidocCodeKeywordSpan">encodeGlobal</span>(output);
+
+    return timing.measure(
+'call.hook.' + name,
+
+// Get the arguments
+Promise(getArgument(output))
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.index.encodePage" id="apidoc.element.gitbook.index.encodePage">
+        function <span class="apidocSignatureSpan">gitbook.index.</span>encodePage
+        <span class="apidocSignatureSpan">(output, page)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function encodePage(output, page) {
+    var book = output.getBook();
+    var summary = book.getSummary();
+    var fs = book.getContentFS();
+    var file = page.getFile();
+
+    // JS Page is based on the JSON output
+    var result = JSONUtils.encodePage(page, summary);
+
+    result.type = file.getType();
+    result.path = file.getPath();
+    result.rawPath = fs.resolve(result.path);
+
+    deprecate.field(output, 'page.progress', result, 'progress', function() {
+        return encodeProgress(output, page);
+    }, '"page.progress" property is deprecated');
+
+    deprecate.field(output, 'page.sections', result, 'sections', [
+        {
+            content: result.content,
+            type: 'normal'
+        }
+    ], '"sections" property is deprecated, use page.content instead');
+
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function encodePage(output, page) {
+var book = output.getBook();
+var summary = book.getSummary();
+var fs = book.getContentFS();
+var file = page.getFile();
+
+// JS Page is based on the JSON output
+var result = JSONUtils.<span class="apidocCodeKeywordSpan">encodePage</span>(page, summary);
+
+result.type = file.getType();
+result.path = file.getPath();
+result.rawPath = fs.resolve(result.path);
+
+deprecate.field(output, 'page.progress', result, 'progress', function() {
+    return encodeProgress(output, page);
+...</pre></li>
     </ul>
 
 
@@ -15094,7 +15539,23 @@ return Promise.forEach(articles, function(article) {
     <li>description and source-code<pre class="apidocCodePre">getDefaultLanguage = function () {
     return this.getList().first();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if (!book.isMultilingual()) {
+    return Promise(output);
+}
+
+// Get main language
+var languages = book.getLanguages();
+var mainLanguage = languages.<span class="apidocCodeKeywordSpan">getDefaultLanguage</span>();
+
+// Read the main JSON
+return fs.readFile(path.resolve(outputRoot, mainLanguage.getID(), 'README.json'), 'utf8')
+
+// Extend the JSON
+.then(function(content) {
+    var json = JSON.parse(content);
+...</pre></li>
     </ul>
 
 
@@ -15212,7 +15673,22 @@ var langOutputFile = path.join(
     <li>description and source-code<pre class="apidocCodePre">function areIdenticalPaths(p1, p2) {
     return normalize(p1) === normalize(p2);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+Summary.prototype.getByPath = function(filePath) {
+return this.getArticle(function(article) {
+    var articlePath = article.getPath();
+
+    return (
+        articlePath &amp;&amp;
+        LocationUtils.<span class="apidocCodeKeywordSpan">areIdenticalPaths</span>(articlePath, filePath)
+    );
+});
+};
+
+/**
+Return the first article
+...</pre></li>
     </ul>
 
 
@@ -15287,7 +15763,22 @@ module.exports = {
         return false;
     }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    @return {Promise}
+*/
+function inlinePng(rootFolder, currentFile, $) {
+    var currentDirectory = path.dirname(currentFile);
+
+    return editHTMLElement($, 'img', function($img) {
+var src = $img.attr('src');
+if (!LocationUtils.<span class="apidocCodeKeywordSpan">isDataURI</span>(src)) {
+    return;
+}
+
+// We avoid generating twice the same PNG
+var hash = crc.crc32(src).toString(16);
+var fileName = hash + '.png';
+...</pre></li>
     </ul>
 
 
@@ -15366,21 +15857,21 @@ module.exports = ConrefsLoader;
     return path.normalize(s).replace(/\\/g, '/');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-/**
-Return a page byt its file path
-
-@param {String} filePath
-@return {Page|undefined}
+    @param {Map&lt;String:String|Map&gt;}
 */
-Output.prototype.getPage = function(filePath) {
-filePath = LocationUtils.<span class="apidocCodeKeywordSpan">normalize</span>(filePath);
+function createMockFS(files) {
+    files = Immutable.fromJS(files);
+    var mtime = new Date();
 
-var pages = this.getPages();
-return pages.get(filePath);
-};
+    function getFile(filePath) {
+        var parts = path.<span class="apidocCodeKeywordSpan">normalize</span>(filePath).split(path.sep);
+        return parts.reduce(function(list, part, i) {
+if (!list) return null;
 
-/**
-Get root folder for output
+var file;
+
+if (!part || part === '.') file = list;
+else file = list.get(part);
 ...</pre></li>
     </ul>
 
@@ -15790,21 +16281,21 @@ Log a "FAIL"
     this.logLevel = logLevel;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-this._write = write || function(msg) {
-    if(process.stdout) {
-        process.stdout.write(msg);
-    }
+/**
+Change log level
+
+@param {String} level
+@return {Book}
+*/
+Book.prototype.setLogLevel = function(level) {
+this.getLogger().<span class="apidocCodeKeywordSpan">setLevel</span>(level);
+return this;
 };
-this.lastChar = '\n';
 
-this.<span class="apidocCodeKeywordSpan">setLevel</span>(logLevel || 'info');
+/**
+Create a book using a filesystem
 
-// Create easy-to-use method like "logger.debug.ln('....')"
-LEVELS.forEach(function(level, levelKey) {
-    if (levelKey === 'DISABLED') {
-        return;
-    }
-    levelKey = levelKey.toLowerCase();
+@param {FS} fs
 ...</pre></li>
     </ul>
 
@@ -16770,7 +17261,23 @@ return callPageHook('page:before', output, resultPage)
     var glossary = this.get('glossary');
     return Promise(glossary.toText(content));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if (!parser) {
+    throw error.FileNotParsableError({
+        filename: file.getPath()
+    });
+}
+
+return parser.<span class="apidocCodeKeywordSpan">renderGlossary</span>(entries.toJS());
+};
+
+
+/**
+Add/Replace an entry to a glossary
+
+@param {Glossary} glossary
+...</pre></li>
     </ul>
 
 
@@ -16802,7 +17309,22 @@ return callPageHook('page:before', output, resultPage)
     var summary = this.get('summary');
     return Promise(summary.toText(content));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if (!parser) {
+    throw error.FileNotParsableError({
+        filename: file.getPath()
+    });
+}
+
+return parser.<span class="apidocCodeKeywordSpan">renderSummary</span>({
+    parts: parts.toJS()
+});
+};
+
+/**
+Return all articles as a list
+...</pre></li>
     </ul>
 
 
@@ -16831,22 +17353,22 @@ return callPageHook('page:before', output, resultPage)
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-@param {String} key
-@param {Object} instance
-@param {String} oldName
-@param {String} newName
-*/
-function deprecateRenamedMethod(book, key, instance, oldName, newName, msg) {
-msg = msg || ('"' + oldName + '" is deprecated, use "' + newName + '()" instead'
-;);
-var fn = objectPath.<span class="apidocCodeKeywordSpan">get</span>(instance, newName);
 
-instance[oldName] = deprecateMethod(book, key, fn, msg);
-}
+#### Book instance
 
-module.exports = {
-method: deprecateMethod,
-renamedMethod: deprecateRenamedMethod,
+The `Book` class is the central point of GitBook, it centralize all access read methods. This class is defined in [book.js](https
+://github.com/GitbookIO/gitbook/blob/master/lib/book.js).
+
+```js
+// Read configuration from book.json
+var value = book.config.<span class="apidocCodeKeywordSpan">get</span>('title', 'Default Value');
+
+// Resolve a filename to an absolute path
+var filepath = book.resolve('README.md');
+
+// Render an inline markup string
+book.renderInline('markdown', 'This is **Markdown**')
+.then(function(str) { ... })
 ...</pre></li>
     </ul>
 
@@ -16864,7 +17386,23 @@ renamedMethod: deprecateRenamedMethod,
         return parser.matchExtension(ext);
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+Return parser for this file
+
+@return {Parser}
+*/
+File.prototype.getParser = function() {
+return parsers.<span class="apidocCodeKeywordSpan">getByExt</span>(this.getExtension());
+};
+
+/**
+Create a file from stats informations
+
+@param {String} filepath
+@param {Object|fs.Stats} stat
+...</pre></li>
     </ul>
 
 
@@ -16928,20 +17466,21 @@ return blocks
     return (filename.substr(0, root.length) === root);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-});
-        })
-        .nodeify(callback);
-    },
+@param {String} filename
+@return {Boolean}
+*/
+FS.prototype.isInScope = function(filename) {
+var rootPath = this.getRoot();
+filename = path.join(rootPath, filename);
 
-    resolve: function(from, to) {
-        // If origin is in the book, we enforce result file to be in the book
-        if (PathUtils.<span class="apidocCodeKeywordSpan">isInRoot</span>(this.rootFolder, from)) {
+return PathUtil.<span class="apidocCodeKeywordSpan">isInRoot</span>(rootPath, filename);
+};
 
-// Path of current template in the rootFolder (not absolute to fs)
-var fromRelative = path.relative(this.rootFolder, from);
+/**
+Resolve a file in this FS
 
-// Resolve "to" to a filepath relative to rootFolder
-var href = LocationUtils.toAbsolute(to, path.dirname(fromRelative), '');
+@param {String}
+@return {String}
 ...</pre></li>
     </ul>
 
@@ -16988,21 +17527,21 @@ var originalFilename = this.getTemplateName(from);
     return path.normalize(filename);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-/**
-Return a page byt its file path
-
-@param {String} filePath
-@return {Page|undefined}
+    @param {Map&lt;String:String|Map&gt;}
 */
-Output.prototype.getPage = function(filePath) {
-filePath = LocationUtils.<span class="apidocCodeKeywordSpan">normalize</span>(filePath);
+function createMockFS(files) {
+    files = Immutable.fromJS(files);
+    var mtime = new Date();
 
-var pages = this.getPages();
-return pages.get(filePath);
-};
+    function getFile(filePath) {
+        var parts = path.<span class="apidocCodeKeywordSpan">normalize</span>(filePath).split(path.sep);
+        return parts.reduce(function(list, part, i) {
+if (!list) return null;
 
-/**
-Get root folder for output
+var file;
+
+if (!part || part === '.') file = list;
+else file = list.get(part);
 ...</pre></li>
     </ul>
 
@@ -17072,7 +17611,22 @@ hasFile: function(fileName, content) {
         path.basename(filename, path.extname(filename)) + ext
     );
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    if (
+        path.basename(filePath, path.extname(filePath)) == 'README' ||
+        (fileReadme.exists() &amp;&amp; filePath == fileReadme.getPath())
+    ) {
+        filePath = path.join(path.dirname(filePath), 'index' + OUTPUT_EXTENSION);
+    } else {
+        filePath = PathUtils.<span class="apidocCodeKeywordSpan">setExtension</span>(filePath, OUTPUT_EXTENSION);
+    }
+
+    return LocationUtils.normalize(filePath);
+}
+
+module.exports = fileToOutput;
+...</pre></li>
     </ul>
 
 
@@ -17147,7 +17701,23 @@ hasFile: function(fileName, content) {
         version: version || DEFAULT_VERSION
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param {Array}
+ * @return {List&lt;PluginDependency&gt;}
+ */
+PluginDependency.listFromArray = function(arr) {
+return Immutable.List(arr)
+    .map(function(entry) {
+        if (is.string(entry)) {
+            return PluginDependency.<span class="apidocCodeKeywordSpan">createFromString</span>(entry);
+        } else {
+            return PluginDependency({
+                name: entry.get('name'),
+                version: entry.get('version')
+            });
+        }
+    })
+...</pre></li>
     </ul>
 
 
@@ -17296,21 +17866,21 @@ if (!result) {
     return this.get('depth');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-            .map(encodeSummaryArticle)
-            .toJS();
-    }
+    var article = summary.getByPath(file.getPath());
 
-    return {
-        title: article.getTitle(),
-        level: article.getLevel(),
-        depth: article.<span class="apidocCodeKeywordSpan">getDepth</span>(),
-        anchor: article.getAnchor(),
-        url: article.getUrl(),
-        path: article.getPath(),
-        ref: article.getRef(),
-        articles: articles
-    };
+    var result = attributes.toJS();
+
+    if (article) {
+result.title = article.getTitle();
+result.level = article.getLevel();
+result.depth = article.<span class="apidocCodeKeywordSpan">getDepth</span>();
+
+var nextArticle = summary.getNextArticle(article);
+if (nextArticle) {
+    result.next = encodeSummaryArticle(nextArticle);
 }
+
+var prevArticle = summary.getPrevArticle(article);
 ...</pre></li>
     </ul>
 
@@ -17599,20 +18169,21 @@ return Promise.forEach(articles, function(article) {
     return this.get('version');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * Create a plugin from a dependency
- * @param {PluginDependency}
- * @return {Plugin}
- */
-Plugin.createFromDep = function(dep) {
-    return new Plugin({
-        name: dep.getName(),
-        version: dep.<span class="apidocCodeKeywordSpan">getVersion</span>()
-    });
 };
 
-Plugin.nameToNpmID = PluginDependency.nameToNpmID;
+/**
+* Is the plugin using a git dependency
+* @return {Boolean}
+*/
+PluginDependency.prototype.isGitDependency = function() {
+   return !semver.validRange(this.<span class="apidocCodeKeywordSpan">getVersion</span>());
+};
 
-module.exports = Plugin;
+/**
+* Create a plugin with a name and a plugin
+* @param {String}
+* @return {Plugin|undefined}
+*/
 ...</pre></li>
     </ul>
 
@@ -18288,21 +18859,18 @@ function waitForCtrlC() {
     return Q(object)["finally"](callback);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-min: undefined,
-max: 0
-    };
 
-    var start = Date.now();
-
-    return p
-    .<span class="apidocCodeKeywordSpan">fin</span>(function() {
-var end = Date.now();
-var duration = (end - start);
-
-timers[type].count ++;
-timers[type].total += duration;
-
-if (is.undefined(timers[type].min)) {
+        return Parse.parseBook(book)
+        .then(function(resultBook) {
+            return Output.generate(Generator, resultBook, {
+                root: outputFolder
+            });
+        })
+        .<span class="apidocCodeKeywordSpan">fin</span>(function() {
+            if (kwargs.timing) timing.dump(book.getLogger());
+        });
+    }
+};
 ...</pre></li>
     </ul>
 
@@ -18412,22 +18980,22 @@ return fs.assertFile(filePath, function() {
     return Q(object).dispatch("get", [key]);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-@param {String} key
-@param {Object} instance
-@param {String} oldName
-@param {String} newName
-*/
-function deprecateRenamedMethod(book, key, instance, oldName, newName, msg) {
-msg = msg || ('"' + oldName + '" is deprecated, use "' + newName + '()" instead'
-;);
-var fn = objectPath.<span class="apidocCodeKeywordSpan">get</span>(instance, newName);
 
-instance[oldName] = deprecateMethod(book, key, fn, msg);
-}
+#### Book instance
 
-module.exports = {
-method: deprecateMethod,
-renamedMethod: deprecateRenamedMethod,
+The `Book` class is the central point of GitBook, it centralize all access read methods. This class is defined in [book.js](https
+://github.com/GitbookIO/gitbook/blob/master/lib/book.js).
+
+```js
+// Read configuration from book.json
+var value = book.config.<span class="apidocCodeKeywordSpan">get</span>('title', 'Default Value');
+
+// Resolve a filename to an absolute path
+var filepath = book.resolve('README.md');
+
+// Render an inline markup string
+book.renderInline('markdown', 'This is **Markdown**')
+.then(function(str) { ... })
 ...</pre></li>
     </ul>
 
@@ -19098,7 +19666,23 @@ return Promise()
     <li>description and source-code<pre class="apidocCodePre">function progress(object, progressed) {
     return Q(object).then(void 0, void 0, progressed);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    'ebook-convert',
+    path.resolve(outputFolder, SUMMARY_FILE),
+    path.resolve(outputFolder, 'index.' + format),
+    command.optionsToShellArgs(options)
+].join(' ');
+
+return command.exec(cmd)
+.<span class="apidocCodeKeywordSpan">progress</span>(function(data) {
+    logger.debug(data);
+})
+.fail(function(err) {
+    if (err.code == 127) {
+        throw error.RequireInstallError({
+            cmd: 'ebook-convert',
+            install: 'Install it from Calibre: https://calibre-ebook.com'
+...</pre></li>
     </ul>
 
 
@@ -19164,21 +19748,20 @@ return Promise()
     }, Q(base));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * @param {Article|Part} base
- * @param {Function(article)} iter
- * @return {Article}
- */
-SummaryArticle.findArticle = function(base, iter) {
-    var articles = base.getArticles();
+*/
+function createMockFS(files) {
+    files = Immutable.fromJS(files);
+    var mtime = new Date();
 
-    return articles.<span class="apidocCodeKeywordSpan">reduce</span>(function(result, article) {
-if (result) return result;
+    function getFile(filePath) {
+        var parts = path.normalize(filePath).split(path.sep);
+        return parts.<span class="apidocCodeKeywordSpan">reduce</span>(function(list, part, i) {
+if (!list) return null;
 
-if (iter(article)) {
-    return article;
-}
+var file;
 
-return SummaryArticle.findArticle(article, iter);
+if (!part || part === '.') file = list;
+else file = list.get(part);
 ...</pre></li>
     </ul>
 
@@ -19274,21 +19857,22 @@ for (var i = 0; i &lt; this.sockets.length; i++) {
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        /**
-Resolve a file from the book root
+The `Book` class is the central point of GitBook, it centralize all access read methods. This class is defined in [book.js](https
+://github.com/GitbookIO/gitbook/blob/master/lib/book.js).
 
-@param {String} fileName
-@return {String}
-        */
-        resolve: function(fileName) {
-return path.<span class="apidocCodeKeywordSpan">resolve</span>(book.getContentRoot(), fileName);
-        },
+```js
+// Read configuration from book.json
+var value = book.config.get('title', 'Default Value');
 
-        /**
-Resolve a page by it path
+// Resolve a filename to an absolute path
+var filepath = book.<span class="apidocCodeKeywordSpan">resolve</span>('README.md');
 
-@param {String} filePath
-@return {String}
+// Render an inline markup string
+book.renderInline('markdown', 'This is **Markdown**')
+    .then(function(str) { ... })
+
+// Render a markup string (block mode)
+book.renderBlock('markdown', '* This is **Markdown**')
 ...</pre></li>
     </ul>
 
@@ -20128,6 +20712,106 @@ return server.<span class="apidocCodeKeywordSpan">stop</span>()
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gitbook.state" id="apidoc.module.gitbook.state">module gitbook.state</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.state.state" id="apidoc.element.gitbook.state.state">
+        function <span class="apidocSignatureSpan">gitbook.</span>state
+        <span class="apidocSignatureSpan">(values)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Record(values) {
+  if (values instanceof RecordType) {
+    return values;
+  }
+  if (!(this instanceof RecordType)) {
+    return new RecordType(values);
+  }
+  if (!hasInitialized) {
+    hasInitialized = true;
+    var keys = Object.keys(defaultValues);
+    setProps(RecordTypePrototype, keys);
+    RecordTypePrototype.size = keys.length;
+    RecordTypePrototype._name = name;
+    RecordTypePrototype._keys = keys;
+    RecordTypePrototype._defaultValues = defaultValues;
+  }
+  this._map = Map(values);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gitbook.state.prototype" id="apidoc.module.gitbook.state.prototype">module gitbook.state.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.state.prototype.constructor" id="apidoc.element.gitbook.state.prototype.constructor">
+        function <span class="apidocSignatureSpan">gitbook.state.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(values)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Record(values) {
+  if (values instanceof RecordType) {
+    return values;
+  }
+  if (!(this instanceof RecordType)) {
+    return new RecordType(values);
+  }
+  if (!hasInitialized) {
+    hasInitialized = true;
+    var keys = Object.keys(defaultValues);
+    setProps(RecordTypePrototype, keys);
+    RecordTypePrototype.size = keys.length;
+    RecordTypePrototype._name = name;
+    RecordTypePrototype._keys = keys;
+    RecordTypePrototype._defaultValues = defaultValues;
+  }
+  this._map = Map(values);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.state.prototype.getI18n" id="apidoc.element.gitbook.state.prototype.getI18n">
+        function <span class="apidocSignatureSpan">gitbook.state.prototype.</span>getI18n
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getI18n = function () {
+    return this.get('i18n');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gitbook.state.prototype.getResources" id="apidoc.element.gitbook.state.prototype.getResources">
+        function <span class="apidocSignatureSpan">gitbook.state.prototype.</span>getResources
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getResources = function () {
+    return this.get('resources');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gitbook.summaryArticle" id="apidoc.module.gitbook.summaryArticle">module gitbook.summaryArticle</a></h1>
 
 
@@ -20292,7 +20976,23 @@ module.exports = SummaryArticle;
 
     return childLevel;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var SummaryArticle = require('../summaryArticle');
+var File = require('../file');
+
+describe('SummaryArticle', function() {
+    describe('createChildLevel', function() {
+it('must create the right level', function() {
+    var article = SummaryArticle.create({}, '1.1');
+    expect(article.<span class="apidocCodeKeywordSpan">createChildLevel</span>()).toBe('1.1.1');
+});
+
+it('must create the right level when has articles', function() {
+    var article = SummaryArticle.create({
+        articles: [
+            {
+                title: 'Test'
+...</pre></li>
     </ul>
 
 
@@ -20373,21 +21073,21 @@ return {
     return (this.getLevel().split('.').length - 1);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-            .map(encodeSummaryArticle)
-            .toJS();
-    }
+    var article = summary.getByPath(file.getPath());
 
-    return {
-        title: article.getTitle(),
-        level: article.getLevel(),
-        depth: article.<span class="apidocCodeKeywordSpan">getDepth</span>(),
-        anchor: article.getAnchor(),
-        url: article.getUrl(),
-        path: article.getPath(),
-        ref: article.getRef(),
-        articles: articles
-    };
+    var result = attributes.toJS();
+
+    if (article) {
+result.title = article.getTitle();
+result.level = article.getLevel();
+result.depth = article.<span class="apidocCodeKeywordSpan">getDepth</span>();
+
+var nextArticle = summary.getNextArticle(article);
+if (nextArticle) {
+    result.next = encodeSummaryArticle(nextArticle);
 }
+
+var prevArticle = summary.getPrevArticle(article);
 ...</pre></li>
     </ul>
 
@@ -20802,7 +21502,23 @@ return parseFilePage(book, filepath)
 
     return childLevel;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var SummaryArticle = require('../summaryArticle');
+var File = require('../file');
+
+describe('SummaryArticle', function() {
+    describe('createChildLevel', function() {
+it('must create the right level', function() {
+    var article = SummaryArticle.create({}, '1.1');
+    expect(article.<span class="apidocCodeKeywordSpan">createChildLevel</span>()).toBe('1.1.1');
+});
+
+it('must create the right level when has articles', function() {
+    var article = SummaryArticle.create({
+        articles: [
+            {
+                title: 'Test'
+...</pre></li>
     </ul>
 
 
@@ -22418,21 +23134,21 @@ return content.replace(regex, function(all, match) {
     return extend(new_cls, name, props);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- *      - absolute url ("/test.md")
- *      - git url ("")
- *
- * @param {String} rootFolder
- * @param {Function(filePath, source)} transformFn (optional)
- * @param {Logger} logger (optional)
- */
-var ConrefsLoader = nunjucks.Loader.<span class="apidocCodeKeywordSpan">extend</span>({
-async: true,
 
-init: function(rootFolder, transformFn, logger) {
-    this.rootFolder = rootFolder;
-    this.transformFn = transformFn;
-    this.logger = logger;
-    this.git = new Git();
+var is = require('is');
+var path = require('path');
+var fs = require('fs');
+var expect = require('expect');
+var cheerio = require('cheerio');
+
+expect.<span class="apidocCodeKeywordSpan">extend</span>({
+/**
+ * Check that a file is created in a directory:
+ * expect('myFolder').toHaveFile('hello.md');
+ */
+toHaveFile: function(fileName) {
+    var filePath = path.join(this.actual, fileName);
+    var exists = fs.existsSync(filePath);
 ...</pre></li>
     </ul>
 
@@ -22662,21 +23378,22 @@ module.exports = ConrefsLoader;
     return path.resolve(resultFolder, to);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        /**
-Resolve a file from the book root
+The `Book` class is the central point of GitBook, it centralize all access read methods. This class is defined in [book.js](https
+://github.com/GitbookIO/gitbook/blob/master/lib/book.js).
 
-@param {String} fileName
-@return {String}
-        */
-        resolve: function(fileName) {
-return path.<span class="apidocCodeKeywordSpan">resolve</span>(book.getContentRoot(), fileName);
-        },
+```js
+// Read configuration from book.json
+var value = book.config.get('title', 'Default Value');
 
-        /**
-Resolve a page by it path
+// Resolve a filename to an absolute path
+var filepath = book.<span class="apidocCodeKeywordSpan">resolve</span>('README.md');
 
-@param {String} filePath
-@return {String}
+// Render an inline markup string
+book.renderInline('markdown', 'This is **Markdown**')
+    .then(function(str) { ... })
+
+// Render a markup string (block mode)
+book.renderBlock('markdown', '* This is **Markdown**')
 ...</pre></li>
     </ul>
 
@@ -22727,7 +23444,19 @@ Resolve a page by it path
     // Rollback to previous level
     logger.setLevel(logLevel);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return Parse.parseBook(book)
+        .then(function(resultBook) {
+            return Output.generate(Generator, resultBook, {
+                root: outputFolder
+            });
+        })
+        .fin(function() {
+            if (kwargs.timing) timing.<span class="apidocCodeKeywordSpan">dump</span>(book.getLogger());
+        });
+    }
+};
+...</pre></li>
     </ul>
 
 
